@@ -20,9 +20,9 @@
     </div>
     <!-- ===== HIGHLIGHT 4-CARD ===== -->
     <div style="max-width:100%;margin:0 auto;padding: 15px 20px;">
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch;">
+        <div class="row" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch;">
             <!-- Card 1: MST -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #4361ee;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #4361ee;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#eff3ff;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">🔍</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Khởi tạo Khách hàng/Nhà cung cấp qua MST<br/><em>Create Customers/Vendors via Tax Code</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Chỉ cần nhập Mã số thuế, hệ thống tự động truy xuất cơ sở dữ liệu quốc gia, điền tên &amp; địa chỉ chuẩn xác trong 1 giây. Cảnh báo tự động ngăn chặn trùng lặp dữ liệu (<strong>Master Data</strong>).</p>
@@ -30,7 +30,7 @@
             </div>
 
             <!-- Card 2: E-Invoice -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #7c3aed;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #7c3aed;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#f5f3ff;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">📄</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Xử lý hóa đơn đầu vào<br/><em>Input Invoice Processing</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Đồng bộ hóa đơn đầu vào từ Cục thuế thông qua Sinvoice. Tự động nhận diện hóa đơn (Mới/Điều chỉnh/Thay thế). Đối soát <strong>3 chiều (3-Way Matching)</strong> giữa PO - Receipt - Bill giúp ngăn chặn rủi ro thất thoát. Ghi nhận hóa đơn nhanh chóng và chính xác.</p>
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Card 3: Bắt đối ứng -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #f97316;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #f97316;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#fff7ed;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">📈</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Tự động Bắt đối ứng tài khoản<br/><em>Automated Contra-Account Mapping</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Bộ quy tắc thông minh tự động phân tích và ghi nhận cặp tài khoản đối ứng (Nợ/Có) chuẩn xác. Tuân thủ tuyệt đối cấu trúc Sổ Cái, Sổ Chi tiết theo thông tư 99 để phục vụ thanh tra, kiểm toán.</p>
@@ -46,7 +46,7 @@
             </div>
 
             <!-- Card 4: Kết chuyển -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #059669;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #059669;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">📊</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Nghiệp vụ kết chuyển cuối kỳ<br/><em>Period-End Closing Operations</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Tự động hóa hoàn toàn các bút toán kết chuyển doanh thu, chi phí (511, 632, 641, 642,...) sang tài khoản 911 để xác định kết quả kinh doanh. Đảm bảo số liệu tổng hợp chính xác tuyệt đối và rút ngắn đáng kể thời gian chốt số.</p>
@@ -54,7 +54,7 @@
             </div>
 
             <!-- Card 5: CCDC -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #0891b2;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #0891b2;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#ecfeff;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">🔧</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Quản lý toàn diện Tài sản (TSCĐ) & CCDC<br/><em>Comprehensive Fixed Asset & Tool/Equipment Management</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Kiểm soát chặt chẽ vòng đời tài sản, công cụ dụng cụ từ khâu mua sắm, phân bổ, cấp phát luân chuyển cho đến khi thanh lý, liên kết trực tiếp với dữ liệu nhân sự phòng ban.</p>
@@ -62,7 +62,7 @@
             </div>
 
             <!-- Card 6: Báo cáo -->
-            <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #dc2626;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <div class="col-6" style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #dc2626;border-radius:12px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
                 <div style="width:48px;height:48px;border-radius:10px;background:#fef2f2;display:flex;align-items:center;justify-content:center;font-size:1.4em;margin-bottom:16px;">📑</div>
                 <h3 style="font-weight:700;color:#1a1a2e;margin-bottom:10px;line-height:1.4;font-size: 1.2rem;">Hệ thống Biểu mẫu & Báo cáo TT99<br/><em>Circular 99 Compliant Reports & Forms</em></h3>
                 <p style="font-size:1em;color:#6c7a89;line-height:1.7;margin:0;">[VI]: Bản địa hóa hoàn toàn hệ thống báo cáo đầu ra của Odoo, đáp ứng 100% các tiêu chuẩn Phụ lục I, III và IV mà không cần thao tác thủ công ngoài hệ thống.</p>
