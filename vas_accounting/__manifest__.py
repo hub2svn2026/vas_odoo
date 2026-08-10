@@ -27,7 +27,7 @@
         ],
     },
     'images': [
-        'vas_accounting_public/static/description/cover.png',
+        'static/description/cover.png',
     ],
     'installable': True,
     'auto_install': False,
