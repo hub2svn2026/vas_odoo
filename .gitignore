@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Internal dev files
+claude.md
+CLAUDE.md
+docs/
+migrations/
+*_backup*
+*.bak
+
+# Odoo
+*.pot

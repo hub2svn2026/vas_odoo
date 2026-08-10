@@ -1,0 +1,4288 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vas_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e-20260320\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-02 10:06+0000\n"
+"PO-Revision-Date: 2026-07-02 10:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "&amp;nbsp;đến ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,print_report_name:vas_accounting.action_vas_period_closing_pdf
+msgid "'Bang ket chuyen - %s' % (object.name)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "(Kèm theo Thông tư số 99/2025/TT-BTC"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "(Viết bằng chữ):"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid ", <br/>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid ", hai bên gồm:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "- Cộng số phát sinh trong kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "- Số tồn cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "- Số tồn đầu kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "/ Có TK"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid "0100109106-501"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "<b>Ví dụ:</b>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "<em>(Kèm theo TT số 99/2025/TT-BTC)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid ""
+"<em>(Kèm theo Thông tư số 99/2025/TT-BTC <br/>ngày 27 tháng 10 năm "
+"2025)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid ""
+"<em>(Kèm theo Thông tư số 99/2025/TT-BTC<br/>ngày 27 tháng 10 năm 2025)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "<em>(Ký, ghi rõ họ tên)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<em>(Ký, ghi rõ họ tên, đóng dấu)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<em>(Ký, họ tên)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<em>(Ký, họ tên, đóng dấu)</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+msgid "<span class=\"o_stat_text\">Phiếu kế toán</span>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<strong>(TỔNG HỢP)</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>BIÊN BẢN BÙ TRỪ CÔNG NỢ</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "<strong>BẢNG KẾT CHUYỂN CUỐI KỲ</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Chứng từ gốc:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "<strong>Có:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Diễn giải:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>GIÁM ĐỐC</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+msgid "<strong>Ghi chú: </strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Ghi chú:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "<strong>HỌ VÀ TÊN NGƯỜI NHẬN TIỀN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "<strong>HỌ VÀ TÊN NGƯỜI NỘP TIỀN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>I. CÔNG NỢ PHẢI THU (TK 131) – Bên A thu của Bên B:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>II. CÔNG NỢ PHẢI TRẢ (TK 331) – Bên A trả cho Bên B:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>KẾ TOÁN TRƯỞNG BÊN A</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>KẾ TOÁN TRƯỞNG BÊN B</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>KẾ TOÁN TRƯỞNG</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid ""
+"<strong>KẾT LUẬN:</strong> Hai bên thống nhất thực hiện bù trừ công nợ với "
+"số tiền là:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<strong>Kế toán trưởng</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Loại nghiệp vụ:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "<strong>Mẫu số S03b-DN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<strong>Mẫu số S32-DN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "<strong>NGƯỜI GIAO</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "<strong>NGƯỜI LẬP PHIẾU</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>NGƯỜI LẬP</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "<strong>NGƯỜI NHẬN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Ngày: </strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+msgid "<strong>Ngày:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<strong>Người ghi sổ</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "<strong>Người đại diện theo pháp luật</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+msgid "<strong>Nhật ký:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "<strong>Nợ:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>PHIẾU KẾ TOÁN</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+msgid "<strong>Số bút toán:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "<strong>Số dư đầu kỳ</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Số phiếu:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "<strong>Số tiền (viết bằng chữ):</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "<strong>Số:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "<strong>SỔ CÁI</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "<strong>THỦ KHO</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "<strong>THỦ QUỸ</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+msgid "<strong>Tham chiếu:</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_fetch_wizard_form
+msgid ""
+"<strong>Viettel VinInvoice</strong> – Đồng bộ hóa đơn điện tử từ cổng thông tin thuế.\n"
+"                        Cấu hình API tại <b>VAS → Hóa đơn điện tử CQT → Cấu hình API</b>."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>ĐẠI DIỆN BÊN A</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>ĐẠI DIỆN BÊN B</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "<strong>Độc lập – Tự do – Hạnh phúc</strong>"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__account_ids_domain
+msgid "Account Ids Domain"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__active
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__active
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__active
+msgid "Active"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__include_unposted
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__include_unposted
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__include_unposted
+msgid "Bao gồm BT nháp"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__include_unposted
+msgid "Bao gồm phiếu nháp"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_account_debt_clearing_pdf
+msgid "Biên bản bù trừ công nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_account_debt_clearing
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Biên bản cấn trừ công nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "BÊN A (Bên cung cấp hàng/dịch vụ):"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "BÊN B (Bên mua hàng/dịch vụ):"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_invoice_register_wizard__direction__output
+msgid "Bán ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_group_reports
+msgid "Báo cáo"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_account_debt_clearing_pdf
+msgid "Báo cáo Biên bản bù trừ công nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_accounting_voucher_pdf
+msgid "Báo cáo Phiếu Kế Toán PDF"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_goods_receipts_report
+#: model:ir.ui.menu,name:vas_accounting.menu_goods_receipts_report_root
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_pivot
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Báo cáo nhập kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_stock_inventory_report_wizard
+#: model:ir.ui.menu,name:vas_accounting.menu_stock_inventory_report_mapped_root
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Báo cáo nhập xuất tồn kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_stock_inventory_report_mapped
+msgid "Báo cáo tổng hợp Nhập Xuất Tồn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_goods_deliveries_report
+#: model:ir.ui.menu,name:vas_accounting.menu_goods_deliveries_report
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_pivot
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Báo cáo xuất kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_goods_deliveries_report
+msgid "Báo cáo xuất kho đầy đủ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__move_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__move_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Bút toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__move_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Bút toán chi tiết"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__available_move_ids
+msgid "Bút toán khả dụng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Bút toán kế toán tương ứng: Nợ TK"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__move_ids
+msgid "Bút toán kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__move_id
+msgid "Bút toán liên kết"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__move_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Bút toán được chọn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Bạn có chắc muốn hủy phiếu cấn trừ này?"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_vas_invoice_register_pdf
+msgid "Bảng Kê Hóa Đơn Mua Vào - Bán Ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_invoice_register_wizard
+#: model:ir.actions.client,name:vas_accounting.action_vas_invoice_register_preview
+#: model:ir.model,name:vas_accounting.model_vas_invoice_register_wizard
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_invoice_register
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+msgid "Bảng kê hóa đơn mua vào - bán ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_invoice_register_pdf
+msgid "Bảng kê hóa đơn mua vào - bán ra PDF"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_invoice_register_xlsx
+msgid "Bảng kê hóa đơn mua vào - bán ra XLSX"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_vas_period_closing_pdf
+msgid "Bảng kết chuyển cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+msgid "Bảng Đối Ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_bank_statement_line__vas_ledger_ids
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__vas_ledger_ids
+msgid "Bảng Đối Ứng VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Bỏ chọn tất cả"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__state__ignored
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Bỏ qua"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Bộ lọc"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Bộ lọc (tuỳ chọn)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid "Bộ lọc (để trống = tất cả)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "CK%"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Chi<br/><em>D</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__amount_discount
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Chiết khấu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__discount
+msgid "Chiết khấu%"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__amount_diff
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Chênh lệch"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Chưa chọn dòng Phải thu (131)."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Chưa chọn dòng Phải trả (331)."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_einvoice_invoice
+msgid "Chưa có dữ liệu hóa đơn điện tử."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_account_ledger
+msgid "Chưa có dữ liệu đối ứng."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__match_state__pending
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Chưa đối soát"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Chỉ có thể gửi duyệt phiếu ở trạng thái Nháp."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Chỉ hủy phiếu đã xác nhận."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Chỉ trả về Nháp từ trạng thái Đã hủy."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Chỉ xác nhận phiếu ở trạng thái Nháp."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_period_closing__rule_group_ids
+msgid ""
+"Chọn mẫu kết chuyển sẽ áp dụng. Nếu không chọn, tất cả quy tắc đang hoạt "
+"động sẽ được dùng."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Chọn nhiều tháng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_type_form
+msgid "Chọn nhật ký sẽ tự động lọc khi gắn bút toán..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Chọn tất cả"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_accounting_voucher__state__hr_review
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Chờ HR duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_accounting_voucher__state__accountant_review
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Chờ Kế toán duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Chức vụ:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__reference
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Chứng từ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__source_document_ref
+msgid "Chứng từ gốc"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__closing_id
+msgid "Closing"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__src_account_code
+msgid "Code"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__create_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__create_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Các dòng Phải thu phải cùng một tài khoản. Hiện có: %s"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Các dòng Phải trả phải cùng một tài khoản. Hiện có: %s"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_voucher_type__journal_ids
+msgid ""
+"Các nhật ký sẽ được tự động lọc khi gắn bút toán cho loại nghiệp vụ này."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Còn lại"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Còn lại (âm = nợ)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Còn phải thu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Còn phải trả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid ""
+"Có thể nhập nhiều prefix:\n"
+"                                111,112,131"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Có<br/><em>2</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__company_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__company_id
+msgid "Công ty"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Căn cứ thỏa thuận, biên bản xác nhận..."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_account_debt_clearing
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_list
+msgid "Cấn trừ công nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_accounting_config
+msgid "Cấu hình"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_einvoice_config
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_list
+msgid "Cấu hình API Hóa đơn điện tử"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid "Cấu hình API Hóa đơn điện tử VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_einvoice_config
+msgid "Cấu hình API tra cứu thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_einvoice_config
+msgid "Cấu hình Hóa đơn điện tử VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__line_ids
+msgid "Cấu hình bút toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_closing_rule
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Cấu hình bút toán kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid ""
+"Cấu hình kết nối tới <strong>Viettel VinInvoice</strong> để lấy hóa đơn điện"
+" tử từ cổng thông tin thuế."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Cấu hình tài khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Cộng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Cộng phát sinh"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Cộng tiền hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Danh mục kho nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+msgid "Danh mục sản phẩm"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+msgid "Danh sách Kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Danh sách Kho xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Date"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_account_payment__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_debt_clearing_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_move_grouped_voucher_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_move_voucher_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_payment_voucher_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_report_vas_period_closing__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_stock_picking_voucher_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_accounting_voucher_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_cash_ledger_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_general_ledger_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_general_ledger_xlsx__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_invoice_register_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_invoice_register_xlsx__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_summary_pdf__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_summary_xlsx__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_xlsx__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__display_name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_bank_statement_line__vas_narration
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__vas_narration
+#: model:ir.model.fields,field_description:vas_accounting.field_account_payment__vas_narration
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_picking__vas_narration
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__vas_label
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__description
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__name
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__rule_name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_payment_vas_narration
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_picking_vas_narration
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Diễn giải"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "Diễn giải (Gom theo Tài khoản)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_account_bank_statement_line__vas_narration
+#: model:ir.model.fields,help:vas_accounting.field_account_move__vas_narration
+#: model:ir.model.fields,help:vas_accounting.field_account_payment__vas_narration
+msgid "Diễn giải (hiển thị trong sổ kế toán VAS)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__move_ref
+msgid "Diễn giải / Tham chiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Diễn giải ngắn gọn..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Diễn giải<br/><em>E</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Dòng Phải thu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__ar_line_ids
+msgid "Dòng Phải thu (131)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Dòng Phải trả"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__ap_line_ids
+msgid "Dòng Phải trả (331)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__credit_line_id
+msgid "Dòng có"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_einvoice_invoice_line
+msgid "Dòng hóa đơn điện tử"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__debit_line_id
+msgid "Dòng nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_period_closing_line
+msgid "Dòng preview kết chuyển cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Dùng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_account_debt_clearing
+msgid ""
+"Dùng khi đối tác vừa là khách hàng (131) vừa là nhà cung cấp (331)\n"
+"                và hai bên thỏa thuận cấn trừ thay vì thanh toán bằng tiền."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_account_ledger
+msgid "Dữ liệu sẽ được tạo tự động khi Post bút toán kế toán."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_account_ledger__matched_by__fifo
+msgid "Fallback FIFO"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__location_id
+msgid "From Location"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "Ghi Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "Ghi Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__note
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__note
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__description
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__item_note
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__note
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Ghi chú"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__note
+msgid "Ghi chú / Căn cứ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Ghi chú thêm về kỳ kết chuyển..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Ghi chú thêm..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Ghi chú:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+msgid "Ghi có"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+msgid "Ghi nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "Giám đốc"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Group By"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Gắn bút toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_link_move_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Gắn bút toán vào Phiếu Kế Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Gỡ tất cả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Gửi HR duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "HR Duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid ""
+"Hai bên thống nhất xác nhận công nợ và thực hiện bù trừ công nợ như sau:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__include_linked
+msgid "Hiện cả bút toán đã gắn phiếu khác"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__line_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Hàng hóa / Dịch vụ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_einvoice_invoice
+#: model:ir.actions.client,name:vas_accounting.action_vas_einvoice_split_view
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_einvoice_root
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Hóa đơn điện tử CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_einvoice_invoice
+msgid "Hóa đơn điện tử từ CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Hôm nay"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Hôm nay,"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__expiry_date
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__expiry_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__expiry_date
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Hạn sử dụng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Họ và tên người giao:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "Họ và tên người nhận tiền:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Họ và tên người nhận:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "Họ và tên người nộp tiền:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_print_wizard
+msgid "Hủy"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_521_511
+msgid "I. Kết chuyển giảm trừ doanh thu (521 → 511)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move_line__id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_payment__id
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__id
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_debt_clearing_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_move_grouped_voucher_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_move_voucher_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_account_payment_voucher_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_report_vas_period_closing__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_stock_picking_voucher_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_accounting_voucher_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_cash_ledger_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_general_ledger_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_general_ledger_xlsx__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_invoice_register_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_invoice_register_xlsx__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_summary_pdf__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_summary_xlsx__id
+#: model:ir.model.fields,field_description:vas_accounting.field_report_vas_accounting_vas_payment_ledger_xlsx__id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_picking__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__id
+msgid "ID"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__external_id
+msgid "ID ngoài"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_revenue_911
+msgid "II. Kết chuyển doanh thu và thu nhập (511,512,515,711 → 911)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_production_154
+msgid "III-a. Kết chuyển CP sản xuất (621,622,623,627 → 154)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_inventory_632
+msgid "III-b. Kết chuyển hàng tồn kho kỳ (611,631 → 632)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_expense_911
+msgid "IV. Kết chuyển chi phí và giá vốn (632,635,641,642,811,821 → 911)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "In Biên bản"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_print_wizard
+msgid "In Báo cáo"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "In Bảng KC"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "In PDF"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "In Phiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_print_wizard
+msgid "In Phiếu Kế Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_account_move_voucher_pdf
+msgid "In Phiếu Kế Toán từ Bút Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_account_move_grouped_voucher_pdf
+msgid "In Phiếu Kế Toán – nhóm Miscellaneous theo Sequence Prefix"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_stock_picking_voucher_pdf
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_stock_picking_voucher_pdf
+msgid "In Phiếu Nhập/Xuất Kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_account_payment_voucher_pdf
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_account_payment_voucher_pdf
+msgid "In Phiếu Thu / Phiếu Chi"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "In Phiếu kế toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_voucher_print_wizard__print_mode__detail
+msgid "In chi tiết (Tất cả bút toán con)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_voucher_print_wizard__print_mode__summary
+msgid "In tổng hợp (Gom nhóm theo Tài khoản)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__invoice_id
+msgid "Invoice"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_no
+msgid "Invoice No (Viettel)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__journal_ids
+msgid "Journal"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_account_move
+msgid "Journal Entry"
+msgstr "Bút toán"
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_account_move_line
+msgid "Journal Item"
+msgstr "Hạng mục bút toán"
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__location_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__location_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__location_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__location_ids
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_warehouse
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Kho nguồn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Kho nhận"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__location_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Kho xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__location_dest_id
+msgid "Kho đến"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Khách hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Khách hàng/Kho nhận"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__partner_id
+msgid "Khách hàng/Đối tác"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Khóa kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Khóa kỳ sẽ không cho phép nhập liệu vào kỳ này. Tiếp tục?"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Không chọn = áp dụng tất cả quy tắc đang hoạt động"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__match_state__not_found
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Không có trong Odoo"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Không thể trả về Nháp vì bút toán chưa được hủy."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Không thể từ chối phiếu đã ghi sổ."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid ""
+"Không tìm thấy bút toán/hóa đơn nào phù hợp trong tháng %s với nhật ký: %s."
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_depreciation
+msgid "Khấu hao (Depreciation)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__match_state__matched
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Khớp"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_search
+msgid "Khớp FIFO"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_search
+msgid "Khớp theo Rule"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_account_ledger_split
+msgid "Kiểm tra đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__print_mode
+msgid "Kiểu in"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid ""
+"Kèm theo: ............................................ Chứng từ gốc: "
+"..........................................."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Ký hiệu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_serial
+msgid "Ký hiệu mẫu số"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_accounting
+msgid "Kế toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Kế toán Duyệt & Ghi Sổ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "Kế toán trưởng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_closing
+msgid "Kết chuyển (Closing)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_period_closing
+#: model:ir.model,name:vas_accounting.model_vas_period_closing
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_period_closing
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_list
+msgid "Kết chuyển cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule.group,name:vas_accounting.closing_template_monthly
+msgid "Kết chuyển doanh thu – chi phí"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_period_closing
+msgid ""
+"Kết chuyển tự động các tài khoản doanh thu, chi phí về tài khoản xác định "
+"kết quả kinh doanh (911) theo chuẩn mực TT200."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__status_message
+msgid "Kết quả"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__validated_cqt_json
+msgid "Kết quả CQT (raw JSON)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_stock_inventory_report_line
+msgid "Kết quả báo cáo nhập xuất tồn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_stock_inventory_report_line
+msgid "Kết quả báo cáo nhập xuất tồn theo kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__validated_cqt_html
+msgid "Kết quả xác thực CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__match_state
+msgid "Kết quả đối soát"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__report_period
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__period_values
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Kỳ báo cáo"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Kỳ: từ ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__write_uid
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__write_date
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Liên kết Odoo"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__direction
+msgid "Loại"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_type_label
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Loại HĐ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__direction
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_type
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__direction
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+msgid "Loại hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_status_label
+msgid "Loại hóa đơn CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__period_type
+msgid "Loại kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_voucher_type
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__voucher_type_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_type_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_type_list
+msgid "Loại nghiệp vụ"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid ""
+"Loại nghiệp vụ \"%s\" chưa cấu hình nhật ký mặc định. Vào Cấu hình → Loại "
+"nghiệp vụ để thiết lập."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_voucher_type
+msgid "Loại nghiệp vụ Phiếu kế toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Loại tiền:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__partner_type
+msgid "Loại đối tác"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__pair_type
+msgid "Loại đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__lot_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+msgid "Lô/Serial"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "Lý do:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_salary
+msgid "Lương (Salary)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_einvoice_fetch
+msgid "Lấy HĐ từ cơ quan thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_fetch_wizard_form
+msgid "Lấy hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_einvoice_fetch_wizard
+#: model:ir.model,name:vas_accounting.model_vas_einvoice_fetch_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_fetch_wizard_form
+msgid "Lấy hóa đơn điện tử từ CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__match_state__mismatch
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Lệch số tiền"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "MST"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "MST bán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_einvoice_config__tax_code
+msgid "MST dùng trong đường dẫn API, ví dụ: 0100109106-501"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "MST mua"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__seller_tax_code
+msgid "MST người bán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__buyer_tax_code
+msgid "MST người mua"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "MST:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__month_number
+msgid "Month Number"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_invoice_register_wizard__direction__input
+msgid "Mua vào"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__code
+msgid "Mã"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__product_code
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Mã SP"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__item_code
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Mã hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_type_code
+msgid "Mã loại"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Mã số"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__tax_code
+msgid "Mã số thuế API"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Mã số thuế:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Mô tả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Mô tả mẫu này áp dụng khi nào (cuối tháng, cuối năm...)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__group_id
+msgid "Mẫu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Mẫu kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_closing_rule_group
+#: model:ir.model,name:vas_accounting.model_vas_closing_rule_group
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_closing_rule_group
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_list
+msgid "Mẫu kết chuyển cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__rule_group_ids
+msgid "Mẫu kết chuyển áp dụng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__mau_so
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Mẫu số"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "Mẫu số 01 - TT"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Mẫu số: 01 - VT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__password
+msgid "Mật khẩu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_closing_rule_group
+msgid ""
+"Mỗi mẫu định nghĩa tập hợp các bút toán kết chuyển sẽ được tạo khi chạy kết "
+"chuyển cuối kỳ."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__state__new
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Mới"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Mở wizard để chọn thủ công"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__name
+msgid "Name"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_group_ops
+msgid "Nghiệp vụ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "Ngày HĐ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__date
+msgid "Ngày chứng từ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__date
+msgid "Ngày cấn trừ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__approved_date
+msgid "Ngày cấp mã CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__move_date
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Ngày hạch toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__sign_date
+msgid "Ngày ký"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_accounting_voucher__date
+msgid ""
+"Ngày kế toán gán cho phiếu — đại diện cho kỳ kế toán cần tổng hợp (thường là ngày cuối tháng, VD: 30/06 cho tháng 6).\n"
+"\n"
+"Chức năng \"Tự động gắn\" và \"Gắn bút toán\" sẽ tự lọc toàn bộ bút toán/hóa đơn trong cùng tháng với ngày này, theo nhật ký đã cấu hình trong Loại nghiệp vụ."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Ngày lấy"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__fetch_date
+msgid "Ngày lấy dữ liệu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__issue_date
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Ngày lập"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+msgid "Ngày nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Ngày nhập hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Ngày tháng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__delivery_date
+msgid "Ngày xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Ngày xuất hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "Ngày, tháng<br/> ghi sổ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Ngày, tháng<br/>ghi sổ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Ngày,<br/>tháng<br/>chứng từ<br/><em>B</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Ngày,<br/>tháng<br/>ghi sổ<br/><em>A</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_payment_ledger_wizard__partner_type__supplier
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Người bán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "Người lập"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_payment_ledger_wizard__partner_type__customer
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Người mua"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Người điều chuyển:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "Nhà cung cấp"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__account_debt_clearing__state__draft
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_accounting_voucher__state__draft
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__state__draft
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Nháp"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Nhóm SP"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__categ_id
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__categ_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__categ_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__categ_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__categ_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__categ_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Nhóm sản phẩm"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+msgid "Nhóm theo"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Nhập Xuất Tồn Kho"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Nhập kho:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_closing_rule__src_account_prefixes
+msgid ""
+"Nhập mã hoặc prefix tài khoản, cách nhau bằng dấu phẩy.\n"
+"Ví dụ: 511,515,711  →  khớp với tất cả TK bắt đầu bằng 511, 515, 711."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Nhập vào Odoo"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__journal_ids
+msgid "Nhật ký"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__journal_id
+msgid "Nhật ký kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__journal_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_voucher_type_form
+msgid "Nhật ký mặc định"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "Nhật ký:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__period_type__year
+msgid "Năm"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Nợ<br/><em>1</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "PHIẾU CHI"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "PHIẾU NHẬP KHO"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "PHIẾU THU"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "PHIẾU XUẤT KHO"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "PHIẾU ĐIỀU CHUYỂN KHO"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__po_id
+msgid "PO liên kết"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_account_payment
+msgid "Payments"
+msgstr "Thanh toán"
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_accounting_voucher
+#: model:ir.actions.client,name:vas_accounting.action_vas_accounting_voucher_preview
+#: model:ir.actions.report,name:vas_accounting.action_vas_accounting_voucher_pdf
+#: model:ir.model,name:vas_accounting.model_vas_accounting_voucher
+#: model:ir.model.fields,field_description:vas_accounting.field_account_bank_statement_line__vas_voucher_id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__vas_voucher_id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move_line__vas_voucher_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__voucher_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_print_wizard__voucher_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_list
+msgid "Phiếu Kế Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.server,name:vas_accounting.action_server_print_grouped_voucher
+msgid "Phiếu kế toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_account_move_grouped_voucher_pdf
+msgid "Phiếu kế toán (nhóm nhật ký)"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Phiếu kế toán chưa có bút toán nào."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_voucher_inherit
+msgid "Phiếu kế toán liên kết..."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_bank_statement_line__vas_closing_id
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__vas_closing_id
+msgid "Phiếu kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Phiếu nhập"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Phiếu phải ở trạng thái Chờ HR duyệt."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Phiếu phải ở trạng thái Chờ Kế toán duyệt."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+msgid "Phiếu xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Phát sinh"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_allocation
+msgid "Phân bổ (Allocation)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__matched_by
+msgid "Phương thức khớp"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__payment_method
+msgid "Phương thức thanh toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Phạm vi áp dụng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_list
+msgid "Phải thu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Phải thu (AR – 131)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_list
+msgid "Phải trả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Phải trả (AP – 331)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid ""
+"Prefix 112 sẽ tự động match:\n"
+"                                1121, 112101, 112102..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid ""
+"Prefix 131 sẽ tự động match:\n"
+"                                1311, 131101..."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__credit_prefixes
+msgid "Prefix tài khoản Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__debit_prefixes
+msgid "Prefix tài khoản Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__preview_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Preview kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__product_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Product"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__product_uom_qty
+msgid "Quantity Received"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__rule_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Quy tắc"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_correspondence_rule
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Quy tắc Bắt Đối Ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_correspondence_rule
+msgid "Quy tắc Bắt Đối Ứng Tài Khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_localization
+msgid "Quy tắc đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__period_type__quarter
+msgid "Quý"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__receive_date
+msgid "Receipt Date"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__reference
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Reference"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_report_vas_period_closing
+msgid "Report: Bảng kết chuyển cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Reset"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Rule"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__rule_id
+msgid "Rule áp dụng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_cash_ledger_wizard__mau_so__s07a
+msgid "S07a-DN – Quỹ tiền mặt"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_cash_ledger_wizard__mau_so__s08
+msgid "S08-DN – Tiền gửi ngân hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "SL"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__qty_in
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "SL Nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__qty_in
+msgid "SL Nhập (3)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__qty_closing
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "SL Tồn cuối"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__qty_closing
+msgid "SL Tồn cuối (8)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__qty_opening
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "SL Tồn đầu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__qty_opening
+msgid "SL Tồn đầu (1)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__qty_out
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "SL Xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__qty_out
+msgid "SL Xuất (6)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__line_number
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "STT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__amount_after_tax
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Sau thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_month__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_account_ledger
+msgid "So Doi Ung Tai Khoan VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__supplier_id
+msgid "Supplier"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__product_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__product_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__product_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__product_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_wizard__product_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Sản phẩm"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid "Sẽ xử lý"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Số"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Số HĐ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__journal_count
+msgid "Số Journal"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__credit_count
+msgid "Số TK Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__debit_count
+msgid "Số TK Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__move_count
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__line_count
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__move_count
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_list
+msgid "Số bút toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__move_count
+msgid "Số bút toán sẽ xử lý"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+msgid "Số chứng từ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Số chứng từ gốc kèm theo:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_bank_statement_line__vas_ledger_count
+#: model:ir.model.fields,field_description:vas_accounting.field_account_move__vas_ledger_count
+msgid "Số cặp đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__balance
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Số dư (N-C)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Số dư cuối kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Số hiệu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Số hiệu chứng từ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "Số hiệu:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_number
+msgid "Số hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Số hóa đơn/CT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__product_uom_qty
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__quantity
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+msgid "Số lượng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Số phiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Số phát sinh"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__lot_id
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__lot_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__lot_names
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_search
+msgid "Số serial/lô"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+msgid "Số tiền"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__amount_credit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Số tiền Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__amount
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Số tiền KC"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__amount_debit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Số tiền Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__odoo_amount
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Số tiền Odoo"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__clearing_amount
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_list
+msgid "Số tiền cấn trừ"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Số tiền cấn trừ (%(amount)s) vượt quá tổng Phải thu (%(total)s)."
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Số tiền cấn trừ (%(amount)s) vượt quá tổng Phải trả (%(total)s)."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Số tiền cấn trừ chốt"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/account_debt_clearing.py:0
+msgid "Số tiền cấn trừ phải lớn hơn 0."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Số tiền gốc"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__amount
+msgid "Số tiền đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "Số tiền:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Số tồn<br/><em>3</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Số:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "SỔ CHI TIẾT THANH TOÁN VỚI NGƯỜI BÁN"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "SỔ CHI TIẾT THANH TOÁN VỚI NGƯỜI MUA"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "SỔ CHI TIẾT THANH TOÁN VỚI NGƯỜI MUA (NGƯỜI BÁN)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_vas_payment_ledger_pdf
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_payment_ledger_pdf
+#: model:ir.model,name:vas_accounting.model_vas_payment_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Sổ Chi Tiết Thanh Toán S32-DN"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_vas_payment_ledger_summary_pdf
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_payment_ledger_summary_pdf
+msgid "Sổ Chi Tiết Thanh Toán S32-DN (Tổng hợp)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_payment_ledger_summary_xlsx
+msgid "Sổ Chi Tiết Thanh Toán S32-DN (Tổng hợp) XLSX"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_payment_ledger_xlsx
+msgid "Sổ Chi Tiết Thanh Toán S32-DN XLSX"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.client,name:vas_accounting.action_vas_general_ledger_preview
+#: model:ir.actions.report,name:vas_accounting.action_vas_general_ledger_pdf
+#: model:ir.model,name:vas_accounting.model_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+msgid "Sổ Cái S03b-DN"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_general_ledger_wizard
+msgid "Sổ Cái S03b-DN (Wizard)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_general_ledger_pdf
+msgid "Sổ Cái S03b-DN Report"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_general_ledger_xlsx
+msgid "Sổ Cái S03b-DN XLSX"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.report,name:vas_accounting.action_vas_cash_ledger_pdf
+msgid "Sổ Kế Toán Chi Tiết Quỹ Tiền Mặt / Tiền Gửi Ngân Hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.client,name:vas_accounting.action_vas_payment_ledger_preview
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_payment_ledger
+msgid "Sổ chi tiết thanh toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_payment_ledger_wizard
+msgid "Sổ chi tiết thanh toán (Wizard)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_general_ledger
+msgid "Sổ cái"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_cash_ledger_wizard
+#: model:ir.actions.client,name:vas_accounting.action_vas_cash_ledger_preview
+#: model:ir.model,name:vas_accounting.model_report_vas_accounting_vas_cash_ledger_pdf
+#: model:ir.model,name:vas_accounting.model_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+msgid "Sổ kế toán chi tiết quỹ tiền mặt / tiền gửi ngân hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__journal_id
+msgid "Sổ nhật ký"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_cash_ledger
+msgid "Sổ quỹ tiền mặt - Tiền gửi ngân hàng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_account_ledger
+#: model:ir.actions.client,name:vas_accounting.action_vas_account_ledger_split
+msgid "Sổ Đối Ứng Tài Khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "Sổ Đối Ứng Tài Khoản VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_einvoice_invoice
+msgid ""
+"Sử dụng chức năng <b>Lấy hóa đơn từ CQT</b> để đồng bộ dữ liệu từ Viettel "
+"VinInvoice."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__account_credit_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__credit_account_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "TK Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "TK Có (KC)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__account_debit_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__debit_account_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+msgid "TK Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "TK Nợ (KC)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__src_account_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "TK nguồn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__src_account_prefixes
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "TK nguồn (prefix)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__dest_account_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__dest_account_id
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "TK đích"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "TK đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "TK<br/>đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "TK<br/>đối ứng<br/><em>F</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "TT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_accounting_voucher__source_document_ref
+msgid "Tham chiếu đến bảng lương, danh sách tài sản, ..."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_fetch_wizard_form
+msgid "Tham số truy vấn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid ""
+"Theo ....................... số ............. ngày .......... tháng "
+".......... năm .......... của ..............................."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_account_ledger__matched_by__rule
+msgid "Theo Rule"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+msgid "Theo tháng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+msgid "Thu<br/><em>C</em>"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__vat_percentage
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Thuế%"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__total_price
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__total_amount
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__amount_before_tax
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Thành tiền"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-javascript
+#: code:addons/vas_accounting/static/src/xml/multi_month_picker.xml:0
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__period_type__month
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Tháng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_stock_inventory_report_month
+msgid "Tháng báo cáo"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_search
+msgid "Tháng này"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Thông tin chung"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Thông tin chứng từ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Thông tin cấn trừ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Thông tin khác"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid "Thông tin kết nối API"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Thông tin kỳ kết chuyển"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_manual
+msgid "Thủ công"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule__sequence
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_closing_rule_group__sequence
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__rule_sequence
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__sequence
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Thứ tự"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__price_in
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Tiền Nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__price_in
+msgid "Tiền Nhập (4)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__price_closing
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Tiền Tồn cuối"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__price_closing
+msgid "Tiền Tồn cuối (9)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__price_opening
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Tiền Tồn đầu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__price_opening
+msgid "Tiền Tồn đầu (2)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__price_out
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_pivot
+msgid "Tiền Xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__price_out
+msgid "Tiền Xuất (7)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__amount_after_tax
+msgid "Tiền sau thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__amount_tax
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__vat_amount
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Tiền thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Tiền thuế GTGT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__amount_before_tax
+msgid "Tiền trước thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__currency_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__currency_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__currency_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__currency_code
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Tiền tệ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__location_dest_id
+msgid "To Location"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+msgid "Total Amount"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__total_price
+msgid "Total Price"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+msgid "Total Qty"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_stock_picking
+msgid "Transfer"
+msgstr "Lệnh chuyển hàng"
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Trước thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__state
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__state
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__state
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__state
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Trạng thái"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_status
+msgid "Trạng thái HĐ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Trả về Nháp"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__account_ids
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__account_ids
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__account_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Tài khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Tài khoản Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Tài khoản Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_closing_rule__dest_account_id
+msgid "Tài khoản nhận kết chuyển."
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Tài khoản:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_account_ledger__display_name
+msgid "Tên hiển thị"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__item_name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Tên hàng hóa / Dịch vụ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_voucher_type__name
+msgid "Tên loại nghiệp vụ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Tên mẫu kết chuyển..."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__seller_name
+msgid "Tên người bán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__buyer_name
+msgid "Tên người mua"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__name
+msgid "Tên phiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__name
+msgid "Tên quy tắc"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+msgid "Tên tài khoản:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__username
+msgid "Tên đăng nhập (MST)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid ""
+"Tên, nhãn hiệu, quy cách, phẩm chất vật tư,<br/>dụng cụ sản phẩm, hàng hóa"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Tìm Phiếu Kế Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+msgid "Tìm biên bản cấn trừ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Tìm hóa đơn điện tử"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_search
+msgid "Tìm kiếm Sổ Đối Ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__match_state__found_po
+msgid "Tìm thấy PO – chưa có hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_recompute_wizard
+msgid "Tính lại toàn bộ đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-javascript
+#: code:addons/vas_accounting/static/src/xml/vas_recompute_button.xml:0
+#: model:ir.actions.act_window,name:vas_accounting.action_vas_recompute_wizard
+msgid "Tính lại Đối Ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid "Tính lại Đối Ứng Tài Khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid "Tính lại đối ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tính toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_vas_voucher_print_wizard
+msgid "Tùy chọn in Phiếu Kế Toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tạo & Đăng bút toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_account_debt_clearing
+msgid "Tạo biên bản cấn trừ công nợ đầu tiên"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_closing_rule_group
+msgid "Tạo mẫu kết chuyển đầu tiên"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.actions.act_window,help:vas_accounting.action_vas_period_closing
+msgid "Tạo phiếu kết chuyển cuối kỳ đầu tiên"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tạo và đăng toàn bộ bút toán kết chuyển?"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Tải dữ liệu XML hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_fetch_wizard__direction__all
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_invoice_register_wizard__direction__all
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_payment_ledger_wizard__partner_type__all
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Tất cả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+msgid "TỔNG CỘNG"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+msgid "TỔNG CỘNG:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "TỔNG HÓA ĐƠN BÁN RA"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "TỔNG HÓA ĐƠN MUA VÀO"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_link_move_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tổng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__total_credit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Tổng Có"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__total_credit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tổng Có kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_accounting_voucher__total_debit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_account_ledger_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Tổng Nợ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing_line__total_debit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Tổng Nợ kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__total_ar_amount
+msgid "Tổng Phải thu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Tổng Phải thu đã chọn"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__total_ap_amount
+msgid "Tổng Phải trả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Tổng Phải trả đã chọn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+msgid "Tổng SL"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tiền Cuối"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tiền Nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tiền Xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tiền Đầu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tồn Cuối"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Tồn Đầu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Tổng Xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Tổng cộng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Tổng phải thu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Tổng phải trả"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Tổng sau thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Tổng thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+msgid "Tổng tiền"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Tổng tiền thanh toán"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_list
+msgid "Tổng trước thuế"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Từ chối"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Từ kho:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__date_from
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__date_from
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "Từ ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Tự động gắn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "Tự động gắn tất cả bút toán khớp nhật ký + tháng của phiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__exchange_rate
+msgid "Tỷ giá"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid "URL API"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__api_url_output
+msgid "URL API Đầu ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_config__api_url
+msgid "URL API Đầu vào"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__price_unit
+msgid "Unit Price"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule,name:vas_accounting.closing_rule_result_4212
+msgid "V. Kết chuyển kết quả kinh doanh (911 → 4212)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_config_section
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_in_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_in_stock
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_root
+msgid "VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_form
+msgid "VD: Bảng lương T5/2026"
+msgstr ""
+
+#. module: vas_accounting
+#. odoo-python
+#: code:addons/vas_accounting/models/vas_accounting_voucher.py:0
+msgid "Vui lòng chọn loại nghiệp vụ trước."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_correspondence_rule__debit_prefixes
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Ví dụ: 111,112,131"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_correspondence_rule__credit_prefixes
+msgid "Ví dụ: 3331,511"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Ví dụ: 511,3331"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Ví dụ: VAT đầu ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__wizard_id
+msgid "Wizard ID"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_stock_inventory_report_wizard
+msgid "Wizard báo cáo nhập xuất tồn kho theo kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__invoice_xml
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "XML hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+msgid "Xem báo cáo"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Xem trước"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Xuất Excel"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Xuất kho:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_form
+msgid "Xác nhận & Ghi sổ"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Xác thực CQT"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.closing.rule.group,name:vas_accounting.closing_template_result
+msgid "Xác định kết quả kinh doanh"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Xóa preview hiện tại và tính lại số dư trong kỳ?"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.ui.menu,name:vas_accounting.menu_vas_einvoice_list
+msgid "Xử lý hóa đơn"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid ""
+"bút toán.\n"
+"                                          Quá trình này có thể mất vài phút nếu dữ liệu lớn."
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model,name:vas_accounting.model_goods_receipts_report
+msgid "goods Receipts Report"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid ""
+"https://api-"
+"vinvoice.viettel.vn/services/einvoiceapplication/api/InvoiceAPI/InvoiceUtilsWS/getAllInvoices"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_config_form
+msgid ""
+"https://api-vinvoice.viettel.vn/services/einvoiceapplication/api/invoice-"
+"sync-tax/search-by-tax-xml"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+msgid "hóa đơn)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_einvoice_invoice__invoice_no
+msgid "invoiceNo từ Viettel — dùng cho API tải XML (vd: C26TRE2)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "ngày 27 tháng 10 năm 2025 của Bộ trưởng Bộ Tài chính)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+msgid "ngày 27/10/2025 của Bộ trưởng Bộ Tài chính)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "năm"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+msgid "phiếu"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "tháng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__journal_ids
+msgid "Áp dụng cho Journal"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__uom_id
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__uom_name
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__uom_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__unit_name
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "ĐVT"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_closing_rule_group_form
+msgid "Đang dùng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__active
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_search
+msgid "Đang hoạt động"
+msgstr ""
+
+#. module: vas_accounting
+#: model:vas.voucher.type,name:vas_accounting.voucher_type_adjustment
+msgid "Điều chỉnh (Adjustment)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__state__approved
+msgid "Đã duyệt"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_accounting_voucher__state__posted
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_accounting_voucher_search
+msgid "Đã ghi sổ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__account_debt_clearing__state__cancelled
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+msgid "Đã hủy"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__state__locked
+msgid "Đã khóa kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__state__imported
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Đã nhập"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__state__calculated
+msgid "Đã tính"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_search
+msgid "Đã tắt"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__account_debt_clearing__state__posted
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+msgid "Đã xác nhận"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_period_closing__state__posted
+msgid "Đã đăng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_cash_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_fetch_wizard_form
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_invoice_register_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_recompute_wizard_form
+msgid "Đóng"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__price_unit
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice_line__unit_price
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_deliveries_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_goods_receipts_report_list
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Đơn giá"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_line__price_out_unit
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_stock_inventory_report_line_list
+msgid "Đơn giá xuất"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_stock_inventory_report_mapped__price_out_unit
+msgid "Đơn giá xuất (5)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_deliveries_report__uom_id
+#: model:ir.model.fields,field_description:vas_accounting.field_goods_receipts_report__uom_id
+msgid "Đơn vị tính"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Đơn vị:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "Đại diện:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Đầu kỳ"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__direction__output
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Đầu ra"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_fetch_wizard__direction__output
+msgid "Đầu ra (Bán hàng)"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_invoice__direction__input
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_search
+msgid "Đầu vào"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields.selection,name:vas_accounting.selection__vas_einvoice_fetch_wizard__direction__input
+msgid "Đầu vào (Mua hàng)"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_period_closing_form
+msgid "Đặt lại"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+msgid "Đến kho:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_cash_ledger_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_fetch_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_general_ledger_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_invoice_register_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_link_move_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_period_closing__date_to
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_recompute_wizard__date_to
+msgid "Đến ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_recompute_wizard__journal_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_correspondence_rule_form
+msgid "Để trống = tất cả journal"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_general_ledger_wizard__account_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_general_ledger_wizard
+msgid "Để trống = tất cả tài khoản"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_payment_ledger_wizard__account_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Để trống = tất cả tài khoản phát sinh"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_payment_ledger_wizard__partner_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Để trống = tất cả đối tác"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,help:vas_accounting.field_vas_correspondence_rule__journal_ids
+msgid "Để trống = áp dụng tất cả journal"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__seller_address
+msgid "Địa chỉ người bán"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_einvoice_invoice__buyer_address
+msgid "Địa chỉ người mua"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_payment_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.stock_picking_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_accounting_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "Địa chỉ:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_einvoice_invoice_form
+msgid "Đối soát với Odoo"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_account_debt_clearing__partner_id
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_payment_ledger_wizard__partner_ids
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_debt_clearing_search
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_vas_payment_ledger_wizard
+msgid "Đối tác"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+msgid "Đối tượng:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+msgid "Đối Ứng"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.view_account_move_vas_form
+msgid "Đối Ứng VAS"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.model.fields,field_description:vas_accounting.field_vas_correspondence_rule__sequence
+msgid "Độ ưu tiên"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_move_grouped_voucher_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_cash_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_general_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_invoice_register_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_pdf
+#: model_terms:ir.ui.view,arch_db:vas_accounting.vas_payment_ledger_summary_pdf
+msgid "đến ngày"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.account_debt_clearing_pdf
+msgid "– Số tiền:"
+msgstr ""
+
+#. module: vas_accounting
+#: model_terms:ir.ui.view,arch_db:vas_accounting.report_vas_period_closing_document
+msgid "– ĐT:"
+msgstr ""
+
+#. module: vas_accounting
+#: model:ir.module.module,shortdesc:base.module_vas_accounting
+msgid "VAS - Vietnamese Accounting Standards"
+msgstr "VAS - Kế toán Việt Nam"
+
+#. module: vas_accounting
+#: model:ir.module.module,summary:base.module_vas_accounting
+msgid "VAS - Kế toán Việt Nam | Giải pháp kế toán tích hợp theo chuẩn mực kế toán Việt Nam (VAS)."
+msgstr "VAS - Kế toán Việt Nam | Giải pháp kế toán tích hợp theo chuẩn mực kế toán Việt Nam (VAS)."

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Ẩn các menu gốc standalone -->
+    <record id="menu_vas_root" model="ir.ui.menu">
+        <field name="name">VAS</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="menu_vas_accounting_config" model="ir.ui.menu">
+        <field name="name">Cấu hình</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="menu_vas_einvoice_root" model="ir.ui.menu">
+        <field name="name">Hóa đơn điện tử CQT</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="menu_vas_accounting" model="ir.ui.menu">
+        <field name="name">Kế toán</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="menu_vas_warehouse" model="ir.ui.menu">
+        <field name="name">Kho</field>
+        <field name="active" eval="False"/>
+    </record>
+
+    <!-- ═══ 1. VAS TRONG KẾ TOÁN ═══ -->
+    <menuitem id="menu_vas_in_accounting"
+        name="VAS"
+        parent="accountant.menu_accounting"
+        sequence="30"
+        groups="account.group_account_readonly"/>
+
+    <!-- Nhóm 1: Nghiệp vụ -->
+    <menuitem id="menu_vas_group_ops"
+        name="Nghiệp vụ"
+        parent="menu_vas_in_accounting"
+        sequence="10"/>
+
+    <menuitem id="menu_vas_einvoice_list"
+        name="Xử lý hóa đơn"
+        parent="menu_vas_group_ops"
+        action="action_vas_payment_required"
+        sequence="50"/>
+
+    <menuitem id="menu_vas_account_ledger_split"
+        name="Kiểm tra đối ứng"
+        parent="menu_vas_group_ops"
+        action="action_vas_payment_required"
+        sequence="60"/>
+
+    <menuitem id="menu_vas_period_closing"
+        name="Kết chuyển cuối kỳ"
+        parent="menu_vas_group_ops"
+        action="action_vas_payment_required"
+        sequence="70"
+        groups="account.group_account_manager"/>
+
+    <!-- Nhóm 2: Báo cáo -->
+    <menuitem id="menu_vas_group_reports"
+        name="Báo cáo"
+        parent="menu_vas_in_accounting"
+        sequence="20"/>
+
+    <menuitem id="menu_vas_general_ledger"
+        name="Sổ cái"
+        parent="menu_vas_group_reports"
+        action="action_vas_payment_required"
+        sequence="10"/>
+
+    <menuitem id="menu_vas_payment_ledger"
+        name="Sổ chi tiết thanh toán"
+        parent="menu_vas_group_reports"
+        action="action_vas_payment_required"
+        sequence="20"/>
+
+    <menuitem id="menu_vas_invoice_register"
+        name="Bảng kê hóa đơn mua vào - bán ra"
+        parent="menu_vas_group_reports"
+        action="action_vas_payment_required"
+        sequence="30"/>
+
+    <menuitem id="menu_vas_cash_ledger"
+        name="Sổ quỹ tiền mặt - Tiền gửi ngân hàng"
+        parent="menu_vas_group_reports"
+        action="action_vas_payment_required"
+        sequence="40"/>
+
+    <!-- ═══ 2. VAS TRONG KHO ═══ -->
+    <menuitem id="menu_vas_in_stock"
+        name="VAS"
+        parent="stock.menu_warehouse_report"
+        sequence="999"
+        groups="stock.group_stock_manager"/>
+
+    <menuitem id="menu_goods_deliveries_report"
+        name="Báo cáo xuất kho"
+        parent="menu_vas_in_stock"
+        action="action_vas_payment_required"
+        sequence="10"/>
+
+    <menuitem id="menu_goods_receipts_report_root"
+        name="Báo cáo nhập kho"
+        parent="menu_vas_in_stock"
+        action="action_vas_payment_required"
+        sequence="20"/>
+
+    <menuitem id="menu_stock_inventory_report_mapped_root"
+        name="Báo cáo nhập xuất tồn kho"
+        parent="menu_vas_in_stock"
+        action="action_vas_payment_required"
+        sequence="30"/>
+
+    <!-- ═══ 3. CẤU HÌNH VAS ═══ -->
+    <menuitem id="menu_vas_config_section"
+        name="VAS"
+        parent="account.menu_finance_configuration"
+        sequence="99"
+        groups="account.group_account_manager"/>
+
+    <menuitem id="menu_vas_localization"
+        name="Quy tắc đối ứng"
+        parent="menu_vas_config_section"
+        action="action_vas_payment_required"
+        sequence="10"/>
+
+    <menuitem id="menu_vas_closing_rule_group"
+        name="Mẫu kết chuyển cuối kỳ"
+        parent="menu_vas_config_section"
+        action="action_vas_payment_required"
+        sequence="20"
+        groups="account.group_account_manager"/>
+
+    <menuitem id="menu_vas_einvoice_mapping"
+        name="Ánh xạ hóa đơn CQT (Cấp 3)"
+        parent="menu_vas_config_section"
+        action="action_vas_payment_required"
+        sequence="30"
+        groups="account.group_account_manager"/>
+
+    <menuitem id="menu_vas_einvoice_config"
+        name="Cấu hình API tra cứu thuế"
+        parent="menu_vas_config_section"
+        action="action_vas_payment_required"
+        sequence="40"
+        groups="account.group_account_manager"/>
+
+</odoo>
