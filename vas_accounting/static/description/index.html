@@ -1,621 +1,483 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Hub2S VAS - Vietnamese Accounting Solution for Odoo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --brand:#7A3B58;
-  --brand-dark:#633047;
-  --brand-soft:#F6EFF3;
-  --brand-soft-2:#FBF8FA;
-  --text:#232127;
-  --muted:#6D6870;
-  --border:#E7E0E4;
-  --white:#FFFFFF;
-  --soft:#FAF9FA;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:#fff;
-  color:var(--text);
-  font-family:"Inter",Arial,Helvetica,sans-serif;
-  line-height:1.65;
-}
-.vas-app{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
-
-/* HERO */
-.vas-hero{
-  position:relative;
-  overflow:hidden;
-  border-radius:28px;
-  padding:62px 58px;
-  margin-bottom:56px;
-  background:
-    radial-gradient(circle at 85% 15%, rgba(122,59,88,.08), transparent 30%),
-    linear-gradient(135deg,#F7F1F4 0%,#FBF8FA 52%,#F2E7ED 100%);
-  border:1px solid #E8DCE2;
-}
-.vas-hero::after{
-  content:"VAS";
-  position:absolute;
-  right:-10px;
-  bottom:-42px;
-  font-size:220px;
-  line-height:1;
-  font-weight:800;
-  color:rgba(122,59,88,.07);
-  pointer-events:none;
-}
-.vas-eyebrow{
-  position:relative;z-index:2;
-  font-size:15px;font-weight:800;letter-spacing:2.4px;
-  color:var(--brand);text-transform:uppercase;margin-bottom:14px;
-}
-.vas-hero h1{
-  position:relative;z-index:2;
-  margin:0 0 8px;font-size:50px;line-height:1.12;
-  max-width:880px;font-weight:800;color:#171519;
-}
-.vas-hero h2{
-  position:relative;z-index:2;
-  margin:0 0 22px;font-size:26px;line-height:1.35;
-  font-weight:600;color:var(--brand);
-}
-.hero-copy{position:relative;z-index:2;max-width:980px}
-.hero-copy p{margin:0 0 12px;font-size:17px;color:#4B464D}
-.hero-copy strong{color:#262027}
-.vas-tags{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.vas-tag{
-  border:1px solid #DCC7D2;background:rgba(255,255,255,.72);
-  color:var(--brand);font-size:14px;font-weight:700;
-  padding:9px 14px;border-radius:999px;
-}
-
-/* GENERAL */
-.vas-section{margin:0 0 58px}
-.section-head{margin-bottom:24px}
-.vas-section-title{font-size:34px;line-height:1.2;margin:0 0 5px;font-weight:800;letter-spacing:-.02em;overflow-wrap:break-word}
-.vas-section-subtitle{font-size:20px;line-height:1.35;color:var(--brand);font-weight:700;margin:0;overflow-wrap:break-word}
-.section-intro{font-size:16px;color:var(--muted);max-width:920px;margin:14px 0 0}
-.lang-label{
-  display:inline-block;margin:12px 0 6px;
-  font-size:12px;font-weight:800;letter-spacing:.08em;
-  color:var(--brand);text-transform:uppercase;
-}
-h3{color:#241F24}
-p{margin-top:0}
-ul{margin-top:8px;padding-left:21px}
-
-/* IMAGE PLACEHOLDER */
-.media-placeholder{
-  margin:22px 0 0;
-  min-height:250px;
-  border-radius:18px;
-  border:1px dashed #CDB9C4;
-  background:linear-gradient(135deg,#FAF7F9,#F2E8ED);
-  display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;
-  text-align:center;padding:24px;
-  color:#8A7580;font-size:14px;line-height:1.45;font-weight:700;
-  overflow-wrap:anywhere;
-}
-.media-placeholder span{display:block;font-size:12px;line-height:1.4;font-weight:400;color:#9B8993;margin-top:0;overflow-wrap:anywhere}
-
-/* WHY */
-.positioning{
-  display:grid;grid-template-columns:1fr 1fr;gap:18px
-}
-.positioning-card{
-  border:1px solid var(--border);border-radius:20px;padding:28px;
-  background:#FBFAFB;
-}
-.positioning-card.vas{background:var(--brand-soft)}
-.positioning-card h3{margin:0 0 3px;font-size:24px}
-.positioning-card .sub{font-size:16px;color:var(--muted);margin-bottom:16px}
-.positioning-card p{color:var(--muted);font-size:15px}
-.value-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px}
-.value-item{
-  padding:14px 12px;border:1px solid var(--border);border-radius:14px;background:#fff;
-  font-size:13px;text-align:center;font-weight:700;color:#504A51
-}
-
-/* FEATURE SECTIONS */
-.feature-card{
-  border:1px solid var(--border);border-radius:22px;padding:30px;
-  background:#fff;
-}
-.feature-card + .feature-card{margin-top:22px}
-.feature-header{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
-.feature-num{
-  flex:none;width:42px;height:42px;border-radius:12px;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:800
-}
-.feature-title-wrap h3{margin:0;font-size:25px;line-height:1.25}
-.feature-en{font-size:15px;color:var(--brand);font-weight:700;margin-top:3px}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.copy-block{
-  padding:18px;border-radius:16px;background:var(--soft);border:1px solid #F0ECEE
-}
-.copy-block h4{margin:0 0 7px;font-size:16px}
-.copy-block p,.copy-block li{font-size:14px;color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}
-.step{
-  padding:15px 13px;border:1px solid var(--border);border-radius:14px;background:#FBFAFB
-}
-.step b{display:block;color:var(--brand);font-size:12px;margin-bottom:4px}
-.step span{font-size:12px;color:var(--muted)}
-
-/* FLOW */
-.flow-wrap{overflow:visible;padding-bottom:6px}
-.flow{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px
-}
-.flow-step{
-  min-width:0;border:1px solid var(--border);border-radius:16px;padding:18px 13px;background:#fff
-}
-.flow-step b{display:block;font-size:13px;color:var(--brand);margin-bottom:4px}
-.flow-step strong{display:block;font-size:14px;margin-bottom:6px}
-.flow-step span{font-size:12px;color:var(--muted)}
-
-/* AUDIENCE */
-.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.audience-item{padding:18px;border:1px solid var(--border);border-radius:16px;background:#FBFAFB;font-size:14px;color:#5F5961}
-
-/* SUPPORT */
-.support-box{
-  padding:30px;border:1px solid #DDCBD4;border-radius:20px;background:var(--brand-soft)
-}
-.support-box h3{font-size:24px;margin:0 0 4px}
-.support-box .en{font-size:16px;color:var(--brand);font-weight:700;margin-bottom:14px}
-.footer{
-  text-align:center;padding:28px 10px 0;border-top:1px solid var(--border)
-}
-.footer strong{font-size:24px;color:var(--brand)}
-.footer p{color:var(--muted);font-size:14px;margin:5px 0}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .vas-hero{padding:44px 30px}
-  .vas-hero h1{font-size:38px}
-  .vas-hero h2{font-size:22px}
-  .positioning,.two-col{grid-template-columns:1fr}
-  .value-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .audience-grid{grid-template-columns:1fr 1fr}
-  .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:600px){
-  .vas-app{padding:14px 12px 42px}
-  .vas-hero{padding:30px 20px;border-radius:18px;margin-bottom:38px}
-  .vas-hero::after{font-size:110px;right:-6px;bottom:-18px}
-  .vas-eyebrow{font-size:12px;letter-spacing:1.6px}
-  .vas-hero h1{font-size:28px;line-height:1.18;letter-spacing:-.025em}
-  .vas-hero h2{font-size:18px;line-height:1.35}
-  .hero-copy p{font-size:14px;line-height:1.6}
-  .vas-tags{gap:7px}
-  .vas-tag{font-size:12px;padding:7px 10px}
-  .vas-section{margin-bottom:42px}
-  .section-head{margin-bottom:18px}
-  .vas-section-title{font-size:26px;line-height:1.22;letter-spacing:-.025em}
-  .vas-section-subtitle{font-size:17px;line-height:1.4}
-  .section-intro{font-size:14px}
-  .positioning,.two-col,.value-grid,.steps,.audience-grid,.flow{grid-template-columns:1fr}
-  .positioning-card,.feature-card{padding:20px 16px;border-radius:16px}
-  .feature-header{gap:10px}
-  .feature-title-wrap h3{font-size:20px}
-  .feature-en{font-size:13px;line-height:1.4}
-  .copy-block{padding:14px}
-  .copy-block p,.copy-block li{font-size:13px;line-height:1.6}
-  .step{padding:13px}
-  .step b{font-size:11px}
-  .step span{font-size:12px}
-  .flow-wrap{overflow:visible}
-  .flow-step{padding:16px 14px}
-  .flow-step b{font-size:12px}
-  .flow-step strong{font-size:14px}
-  .flow-step span{font-size:12px;line-height:1.55}
-  .media-placeholder{min-height:180px;padding:20px 16px;font-size:13px}
-  .media-placeholder span{font-size:11px}
-  .support-box{padding:22px 18px}
-  .footer{padding-top:22px}
-}
-</style>
 </head>
 <body>
-<div class="vas-app">
-<section class="vas-hero">
-  <div class="vas-eyebrow">HUB2S VAS · ODOO</div>
-  <h1>Giải pháp Kế toán Việt Nam trên Odoo</h1>
-  <h2>Vietnamese Accounting Solution for Odoo</h2>
-  <div class="hero-copy">
-    <p><strong>VI —</strong> Hub2S VAS bổ sung lớp bản địa hóa kế toán Việt Nam trên nền tảng Odoo, giúp doanh nghiệp chuẩn hóa nghiệp vụ kế toán, tự động hóa các thao tác thường xuyên và quản lý chứng từ, sổ sách, báo cáo theo yêu cầu thực tế tại Việt Nam.</p>
-    <p><strong>EN —</strong> Hub2S VAS adds a Vietnam-specific accounting localization layer to Odoo, helping businesses standardize accounting workflows, automate repetitive tasks, and manage accounting documents, ledgers, and reports in line with business requirements in Vietnam.</p>
-    <p><strong>VI —</strong> Từ dữ liệu đầu vào → kiểm soát → hạch toán → tạm ứng & chi hộ → đóng kỳ → báo cáo, VAS kết nối các nghiệp vụ kế toán thành một quy trình thống nhất ngay trên Odoo.</p>
-    <p><strong>EN —</strong> From data capture → validation → accounting → advances & payments on behalf → period closing → reporting, VAS connects key accounting processes into one integrated workflow within Odoo.</p>
-  </div>
-  <div class="vas-tags">
-    <span class="vas-tag">Vietnam Accounting</span>
-    <span class="vas-tag">Circular 99</span>
-    <span class="vas-tag">E-Invoice</span>
-    <span class="vas-tag">3-Way Matching</span>
-    <span class="vas-tag">Odoo Enterprise</span>
-  </div>
-</section>
+<div style="background-color:#FFFFFF;padding:15px;border-radius:12px;max-width:100%;margin:0 auto;">
 
-<section class="vas-section">
-  <div class="section-head">
-    <h2 class="vas-section-title">Vì sao Hub2S VAS?</h2>
-    <div class="vas-section-subtitle">Why Hub2S VAS?</div>
-  </div>
-  <p class="section-intro"><strong>VI —</strong> Odoo cung cấp một nền tảng kế toán toàn cầu mạnh mẽ. Hub2S VAS bổ sung các nghiệp vụ và cách thức quản lý phù hợp hơn với thực tế kế toán Việt Nam.</p>
-  <p class="section-intro"><strong>EN —</strong> Odoo provides a powerful global accounting platform. Hub2S VAS extends Odoo with workflows and accounting capabilities designed for the practical requirements of Vietnamese businesses.</p>
+<!-- ===== HERO ===== -->
+<div class="text-center" style="padding:15px 10px;">
+    <div style="display:inline-block;font-size:0.85em;font-weight:700;letter-spacing:2px;color:#7A3B58;text-transform:uppercase;margin-bottom:10px;">HUB2S VAS &middot; ODOO</div>
+    <h1 style="color:#171519;font-size:1.7rem;font-weight:800;margin:0 0 6px;">Giải pháp Kế toán Việt Nam trên Odoo</h1>
+    <h2 style="color:#7A3B58;font-size:1.15rem;font-weight:600;margin:0 0 16px;">Vietnamese Accounting Solution for Odoo</h2>
+    <div style="max-width:820px;margin:0 auto;color:#4B464D;font-size:1em;line-height:1.7;text-align:left;">
+        <p><strong>VI —</strong> Hub2S VAS bổ sung lớp bản địa hóa kế toán Việt Nam trên nền tảng Odoo, giúp doanh nghiệp chuẩn hóa nghiệp vụ kế toán, tự động hóa các thao tác thường xuyên và quản lý chứng từ, sổ sách, báo cáo theo yêu cầu thực tế tại Việt Nam.</p>
+        <p><strong>EN —</strong> Hub2S VAS adds a Vietnam-specific accounting localization layer to Odoo, helping businesses standardize accounting workflows, automate repetitive tasks, and manage accounting documents, ledgers, and reports in line with business requirements in Vietnam.</p>
+        <p><strong>VI —</strong> Từ dữ liệu đầu vào &rarr; kiểm soát &rarr; hạch toán &rarr; tạm ứng &amp; chi hộ &rarr; đóng kỳ &rarr; báo cáo, VAS kết nối các nghiệp vụ kế toán thành một quy trình thống nhất ngay trên Odoo.</p>
+        <p style="margin-bottom:0;"><strong>EN —</strong> From data capture &rarr; validation &rarr; accounting &rarr; advances &amp; payments on behalf &rarr; period closing &rarr; reporting, VAS connects key accounting processes into one integrated workflow within Odoo.</p>
+    </div>
+    <div style="margin-top:14px;">
+        <span style="display:inline-block;border:1px solid #DCC7D2;background-color:#FBF8FA;color:#7A3B58;font-size:0.85em;font-weight:700;padding:7px 13px;border-radius:999px;margin:0 6px 6px 0;">Vietnam Accounting</span>
+        <span style="display:inline-block;border:1px solid #DCC7D2;background-color:#FBF8FA;color:#7A3B58;font-size:0.85em;font-weight:700;padding:7px 13px;border-radius:999px;margin:0 6px 6px 0;">Circular 99</span>
+        <span style="display:inline-block;border:1px solid #DCC7D2;background-color:#FBF8FA;color:#7A3B58;font-size:0.85em;font-weight:700;padding:7px 13px;border-radius:999px;margin:0 6px 6px 0;">E-Invoice</span>
+        <span style="display:inline-block;border:1px solid #DCC7D2;background-color:#FBF8FA;color:#7A3B58;font-size:0.85em;font-weight:700;padding:7px 13px;border-radius:999px;margin:0 6px 6px 0;">3-Way Matching</span>
+        <span style="display:inline-block;border:1px solid #DCC7D2;background-color:#FBF8FA;color:#7A3B58;font-size:0.85em;font-weight:700;padding:7px 13px;border-radius:999px;margin:0 6px 6px 0;">Odoo Enterprise</span>
+    </div>
+</div>
 
-  <div class="positioning" style="margin-top:22px">
-    <div class="positioning-card">
-      <h3>Odoo Accounting</h3>
-      <div class="sub">Global Accounting Platform</div>
-      <span class="lang-label">VI</span>
-      <p>Nền tảng kế toán cốt lõi gồm Kế toán, Hóa đơn, Thanh toán, Đối soát, Tài sản và Báo cáo tài chính.</p>
-      <span class="lang-label">EN</span>
-      <p>Core accounting platform covering Accounting, Invoicing, Payments, Reconciliation, Assets and Financial Reporting.</p>
-    </div>
-    <div class="positioning-card vas">
-      <h3>Hub2S VAS</h3>
-      <div class="sub">Vietnam Accounting Localization</div>
-      <span class="lang-label">VI</span>
-      <p>Tra cứu MST · Hóa đơn điện tử · 3-Way Matching · Tài khoản đối ứng · Tạm ứng & Chi hộ · TSCĐ & CCDC · Kết chuyển cuối kỳ · Biểu mẫu & báo cáo TT99.</p>
-      <span class="lang-label">EN</span>
-      <p>Tax ID Lookup · E-Invoice Processing · 3-Way Matching · Counterpart Account Analysis · Employee Advances & Payments on Behalf · Fixed Assets & Tools · Period-End Closing · Circular 99 Forms & Reports.</p>
-    </div>
-  </div>
+<!-- ===== WHY HUB2S VAS ===== -->
+<div style="padding:20px 10px;">
+    <h2 style="font-size:1.5em;font-weight:800;color:#171519;margin:0 0 4px;">Vì sao Hub2S VAS?</h2>
+    <div style="font-size:1.05em;font-weight:700;color:#7A3B58;margin:0 0 12px;">Why Hub2S VAS?</div>
+    <p style="color:#6D6870;font-size:0.95em;line-height:1.65;"><strong>VI —</strong> Odoo cung cấp một nền tảng kế toán toàn cầu mạnh mẽ. Hub2S VAS bổ sung các nghiệp vụ và cách thức quản lý phù hợp hơn với thực tế kế toán Việt Nam.</p>
+    <p style="color:#6D6870;font-size:0.95em;line-height:1.65;"><strong>EN —</strong> Odoo provides a powerful global accounting platform. Hub2S VAS extends Odoo with workflows and accounting capabilities designed for the practical requirements of Vietnamese businesses.</p>
 
-  <div class="value-grid">
-    <div class="value-item">Bản địa hóa kế toán<br>Vietnamese Localization</div>
-    <div class="value-item">Tự động hóa<br>Automation</div>
-    <div class="value-item">Kiểm soát & đối soát<br>Control & Reconciliation</div>
-    <div class="value-item">TSCĐ · CCDC · Tạm ứng<br>Assets · Tools · Advances</div>
-    <div class="value-item">Biểu mẫu & TT99<br>Forms & Circular 99</div>
-  </div>
-  <div class="media-placeholder">
-    <img src="vas/vas-localization-hub2s-odoo.jpg" alt="Odoo Accounting + Hub2S VAS" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-  </div>
-</section>
+    <div class="row" style="margin-top:16px;">
+        <div class="col-12 col-md-6 mb-4">
+            <div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#FBFAFB;height:100%;">
+                <h3 style="margin:0 0 2px;font-size:1.2em;color:#241F24;">Odoo Accounting</h3>
+                <div style="font-size:0.9em;color:#6D6870;margin-bottom:12px;">Global Accounting Platform</div>
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="color:#6D6870;font-size:0.9em;">Nền tảng kế toán cốt lõi gồm Kế toán, Hóa đơn, Thanh toán, Đối soát, Tài sản và Báo cáo tài chính.</p>
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="color:#6D6870;font-size:0.9em;margin:0;">Core accounting platform covering Accounting, Invoicing, Payments, Reconciliation, Assets and Financial Reporting.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+            <div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#F6EFF3;height:100%;">
+                <h3 style="margin:0 0 2px;font-size:1.2em;color:#241F24;">Hub2S VAS</h3>
+                <div style="font-size:0.9em;color:#6D6870;margin-bottom:12px;">Vietnam Accounting Localization</div>
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="color:#6D6870;font-size:0.9em;">Tra cứu MST &middot; Hóa đơn điện tử &middot; 3-Way Matching &middot; Tài khoản đối ứng &middot; Tạm ứng &amp; Chi hộ &middot; TSCĐ &amp; CCDC &middot; Kết chuyển cuối kỳ &middot; Biểu mẫu &amp; báo cáo TT99.</p>
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="color:#6D6870;font-size:0.9em;margin:0;">Tax ID Lookup &middot; E-Invoice Processing &middot; 3-Way Matching &middot; Counterpart Account Analysis &middot; Employee Advances &amp; Payments on Behalf &middot; Fixed Assets &amp; Tools &middot; Period-End Closing &middot; Circular 99 Forms &amp; Reports.</p>
+            </div>
+        </div>
+    </div>
 
-<section class="vas-section">
+    <div class="row">
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#fff;font-size:0.8em;text-align:center;font-weight:700;color:#504A51;">Bản địa hóa kế toán<br/>Vietnamese Localization</div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#fff;font-size:0.8em;text-align:center;font-weight:700;color:#504A51;">Tự động hóa<br/>Automation</div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#fff;font-size:0.8em;text-align:center;font-weight:700;color:#504A51;">Kiểm soát &amp; đối soát<br/>Control &amp; Reconciliation</div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#fff;font-size:0.8em;text-align:center;font-weight:700;color:#504A51;">TSCĐ &middot; CCDC &middot; Tạm ứng<br/>Assets &middot; Tools &middot; Advances</div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#fff;font-size:0.8em;text-align:center;font-weight:700;color:#504A51;">Biểu mẫu &amp; TT99<br/>Forms &amp; Circular 99</div>
+        </div>
+    </div>
+    <img src="vas/vas-localization-hub2s-odoo.jpg" alt="Odoo Accounting + Hub2S VAS" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">01</div>
-      <div class="feature-title-wrap">
-        <h3>Khởi tạo dữ liệu nhanh và chính xác</h3>
-        <div class="feature-en">Tax ID Lookup & Master Data Protection</div>
-      </div>
+<!-- ===== FEATURE 01 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">01</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Khởi tạo dữ liệu nhanh và chính xác</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Tax ID Lookup &amp; Master Data Protection</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Tạo khách hàng và nhà cung cấp trực tiếp từ <strong>Mã số thuế</strong>, giảm thao tác nhập liệu và hạn chế dữ liệu trùng lặp.</p>
-        <h4>Tra cứu thông tin doanh nghiệp</h4>
-        <ul>
-          <li>Nhập Mã số thuế để tra cứu thông tin doanh nghiệp.</li>
-          <li>Tự động lấy thông tin từ nguồn dữ liệu được tích hợp.</li>
-          <li>Giảm thời gian nhập thông tin thủ công.</li>
-        </ul>
-        <h4>Bảo vệ Master Data</h4>
-        <ul>
-          <li>Kiểm tra Mã số thuế đã tồn tại.</li>
-          <li>Cảnh báo Partner trùng Mã số thuế.</li>
-          <li>Hạn chế dữ liệu trùng và sai thông tin hóa đơn.</li>
-        </ul>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Create customers and vendors using their <strong>Tax ID</strong>, reducing manual data entry and helping maintain clean master data.</p>
-        <h4>Business Information Lookup</h4>
-        <ul>
-          <li>Enter a Tax ID to retrieve business information.</li>
-          <li>Automatically populate available company information from the integrated data source.</li>
-          <li>Reduce manual partner creation.</li>
-        </ul>
-        <h4>Master Data Protection</h4>
-        <ul>
-          <li>Check whether a Tax ID already exists in Odoo.</li>
-          <li>Alert users when a duplicate Tax ID is detected.</li>
-          <li>Help maintain cleaner partner data for accounting and invoicing.</li>
-        </ul>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Tạo khách hàng và nhà cung cấp trực tiếp từ <strong>Mã số thuế</strong>, giảm thao tác nhập liệu và hạn chế dữ liệu trùng lặp.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Tra cứu thông tin doanh nghiệp</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;">
+                    <li>Nhập Mã số thuế để tra cứu thông tin doanh nghiệp.</li>
+                    <li>Tự động lấy thông tin từ nguồn dữ liệu được tích hợp.</li>
+                    <li>Giảm thời gian nhập thông tin thủ công.</li>
+                </ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Bảo vệ Master Data</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;">
+                    <li>Kiểm tra Mã số thuế đã tồn tại.</li>
+                    <li>Cảnh báo Partner trùng Mã số thuế.</li>
+                    <li>Hạn chế dữ liệu trùng và sai thông tin hóa đơn.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Create customers and vendors using their <strong>Tax ID</strong>, reducing manual data entry and helping maintain clean master data.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Business Information Lookup</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;">
+                    <li>Enter a Tax ID to retrieve business information.</li>
+                    <li>Automatically populate available company information from the integrated data source.</li>
+                    <li>Reduce manual partner creation.</li>
+                </ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Master Data Protection</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;">
+                    <li>Check whether a Tax ID already exists in Odoo.</li>
+                    <li>Alert users when a duplicate Tax ID is detected.</li>
+                    <li>Help maintain cleaner partner data for accounting and invoicing.</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/hub2s-vas-tra-cuu-mst-khach-hang-hinh-2.png" alt="Tạo mới khách hàng, nhà cung cấp qua MST dễ dàng" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/hub2s-vas-tra-cuu-mst-khach-hang-hinh-2.png" alt="Tạo mới khách hàng, nhà cung cấp qua MST dễ dàng" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">02</div>
-      <div class="feature-title-wrap">
-        <h3>Xử lý và kiểm soát hóa đơn đầu vào</h3>
-        <div class="feature-en">Viettel S-Invoice Integration & 3-Way Matching</div>
-      </div>
+<!-- ===== FEATURE 02 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">02</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Xử lý và kiểm soát hóa đơn đầu vào</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Viettel S-Invoice Integration &amp; 3-Way Matching</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Kết nối dữ liệu hóa đơn với Odoo và hỗ trợ kiểm soát hóa đơn trong quy trình mua hàng.</p>
-        <h4>Đồng bộ hóa đơn</h4>
-        <p>Tự động lấy dữ liệu hóa đơn từ <strong>Viettel S-Invoice</strong> về Odoo.</p>
-        <ul><li>Hóa đơn mới</li><li>Hóa đơn điều chỉnh</li><li>Hóa đơn thay thế</li></ul>
-        <h4>3-Way Matching</h4>
-        <p><strong>Purchase Order → Receipt → Vendor Bill</strong></p>
-        <ul><li>Số lượng</li><li>Đơn giá</li><li>Giá trị hóa đơn</li></ul>
-        <h4>Gợi ý hạch toán</h4>
-        <p>Với hóa đơn dịch vụ/chi phí, hệ thống có thể dùng dữ liệu hóa đơn và quy tắc cấu hình để đưa ra gợi ý hạch toán.</p>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Connect invoice data with Odoo and strengthen invoice control throughout the purchasing process.</p>
-        <h4>Invoice Synchronization</h4>
-        <p>Automatically retrieve invoice data from <strong>Viettel S-Invoice</strong> into Odoo.</p>
-        <ul><li>New</li><li>Adjusted</li><li>Replaced</li></ul>
-        <h4>3-Way Matching</h4>
-        <p><strong>Purchase Order → Receipt → Vendor Bill</strong></p>
-        <ul><li>Quantity</li><li>Unit price</li><li>Invoice value</li></ul>
-        <h4>Accounting Suggestions</h4>
-        <p>For service and expense invoices, configured accounting rules can suggest journal entries for accountant review and posting.</p>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Kết nối dữ liệu hóa đơn với Odoo và hỗ trợ kiểm soát hóa đơn trong quy trình mua hàng.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Đồng bộ hóa đơn</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0 0 4px;">Tự động lấy dữ liệu hóa đơn từ <strong>Viettel S-Invoice</strong> về Odoo.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Hóa đơn mới</li><li>Hóa đơn điều chỉnh</li><li>Hóa đơn thay thế</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">3-Way Matching</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0 0 4px;"><strong>Purchase Order &rarr; Receipt &rarr; Vendor Bill</strong></p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Số lượng</li><li>Đơn giá</li><li>Giá trị hóa đơn</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Gợi ý hạch toán</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Với hóa đơn dịch vụ/chi phí, hệ thống có thể dùng dữ liệu hóa đơn và quy tắc cấu hình để đưa ra gợi ý hạch toán.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Connect invoice data with Odoo and strengthen invoice control throughout the purchasing process.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Invoice Synchronization</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0 0 4px;">Automatically retrieve invoice data from <strong>Viettel S-Invoice</strong> into Odoo.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>New</li><li>Adjusted</li><li>Replaced</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">3-Way Matching</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0 0 4px;"><strong>Purchase Order &rarr; Receipt &rarr; Vendor Bill</strong></p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Quantity</li><li>Unit price</li><li>Invoice value</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Accounting Suggestions</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">For service and expense invoices, configured accounting rules can suggest journal entries for accountant review and posting.</p>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/hub2s-vas-xu-ly-hoa-don-dau-vao-hinh-3.png" alt="E-Invoice Synchronization & 3-Way Matching" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/hub2s-vas-xu-ly-hoa-don-dau-vao-hinh-3.png" alt="E-Invoice Synchronization &amp; 3-Way Matching" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">03</div>
-      <div class="feature-title-wrap">
-        <h3>Tự động phân tích tài khoản đối ứng</h3>
-        <div class="feature-en">Automated Counterpart Account Analysis</div>
-      </div>
+<!-- ===== FEATURE 03 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">03</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Tự động phân tích tài khoản đối ứng</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Automated Counterpart Account Analysis</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Bổ sung khả năng phân tích và ghi nhận <strong>tài khoản đối ứng Nợ/Có</strong> cho các nghiệp vụ thực hiện thông qua reconciliation.</p>
-        <ul>
-          <li>Phân tích giao dịch đã reconciliation.</li>
-          <li>Xác định cặp tài khoản đối ứng.</li>
-          <li>Ghi nhận thông tin tài khoản đối ứng.</li>
-          <li>Hiển thị dữ liệu phục vụ theo dõi sổ kế toán.</li>
-        </ul>
-        <p>Giúp dữ liệu Odoo được trình bày và phân tích gần hơn với cách tiếp cận quen thuộc của kế toán Việt Nam.</p>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Extend Odoo with <strong>Debit/Credit counterpart account analysis</strong> for transactions processed through reconciliation.</p>
-        <ul>
-          <li>Analyze reconciled transactions.</li>
-          <li>Identify counterpart account pairs.</li>
-          <li>Record counterpart account information.</li>
-          <li>Make counterpart information available for ledger analysis.</li>
-        </ul>
-        <p>This helps present and analyze Odoo accounting data in a way that is more familiar to Vietnamese accountants.</p>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Bổ sung khả năng phân tích và ghi nhận <strong>tài khoản đối ứng Nợ/Có</strong> cho các nghiệp vụ thực hiện thông qua reconciliation.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;">
+                    <li>Phân tích giao dịch đã reconciliation.</li>
+                    <li>Xác định cặp tài khoản đối ứng.</li>
+                    <li>Ghi nhận thông tin tài khoản đối ứng.</li>
+                    <li>Hiển thị dữ liệu phục vụ theo dõi sổ kế toán.</li>
+                </ul>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Giúp dữ liệu Odoo được trình bày và phân tích gần hơn với cách tiếp cận quen thuộc của kế toán Việt Nam.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Extend Odoo with <strong>Debit/Credit counterpart account analysis</strong> for transactions processed through reconciliation.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;">
+                    <li>Analyze reconciled transactions.</li>
+                    <li>Identify counterpart account pairs.</li>
+                    <li>Record counterpart account information.</li>
+                    <li>Make counterpart information available for ledger analysis.</li>
+                </ul>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">This helps present and analyze Odoo accounting data in a way that is more familiar to Vietnamese accountants.</p>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/hub2s-vas-bat-doi-ung-tai-khoan-ke-toan-hinh-4.png" alt="Counterpart Account Analysis" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/hub2s-vas-bat-doi-ung-tai-khoan-ke-toan-hinh-4.png" alt="Counterpart Account Analysis" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">04</div>
-      <div class="feature-title-wrap">
-        <h3>Tạm ứng & Chi hộ khép kín</h3>
-        <div class="feature-en">Employee Advances & Payments on Behalf</div>
-      </div>
+<!-- ===== FEATURE 04 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">04</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Tạm ứng &amp; Chi hộ khép kín</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Employee Advances &amp; Payments on Behalf</div>
+        </div>
     </div>
-    <p><strong>VI —</strong> Quản lý toàn bộ quy trình <strong>Tạm ứng – Chi hộ – Quyết toán – Cấn trừ – Hoàn ứng</strong> trên Odoo.</p>
-    <p><strong>EN —</strong> Manage the complete <strong>Employee Advance – Payment on Behalf – Settlement – Reconciliation – Final Settlement</strong> workflow directly in Odoo.</p>
-    <div class="steps">
-      <div class="step"><b>01 · REQUEST / ĐỀ NGHỊ</b><span>Requester · Amount · Purpose · Department/Project · Approval</span></div>
-      <div class="step"><b>02 · PAYMENT / CHI TIỀN</b><span>141 – Employee Advances<br>338x – Employee Payables</span></div>
-      <div class="step"><b>03 · SETTLEMENT / QUYẾT TOÁN</b><span>E-Invoices + Expenses without VAT invoices</span></div>
-      <div class="step"><b>04 · RECONCILIATION / CẤN TRỪ</b><span>Vendor Bill · Expense · VAT · 331 ↔ 141/338x</span></div>
-      <div class="step"><b>05 · FINAL / TẤT TOÁN</b><span>Excess → Repayment<br>Shortfall → Additional payment</span></div>
+    <p style="font-size:0.9em;color:#4B464D;"><strong>VI —</strong> Quản lý toàn bộ quy trình <strong>Tạm ứng &ndash; Chi hộ &ndash; Quyết toán &ndash; Cấn trừ &ndash; Hoàn ứng</strong> trên Odoo.</p>
+    <p style="font-size:0.9em;color:#4B464D;"><strong>EN —</strong> Manage the complete <strong>Employee Advance &ndash; Payment on Behalf &ndash; Settlement &ndash; Reconciliation &ndash; Final Settlement</strong> workflow directly in Odoo.</p>
+    <div class="row">
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;height:100%;">
+                <b style="display:block;color:#7A3B58;font-size:0.75em;margin-bottom:4px;">01 &middot; REQUEST / ĐỀ NGHỊ</b>
+                <span style="font-size:0.78em;color:#6D6870;">Requester &middot; Amount &middot; Purpose &middot; Department/Project &middot; Approval</span>
+            </div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;height:100%;">
+                <b style="display:block;color:#7A3B58;font-size:0.75em;margin-bottom:4px;">02 &middot; PAYMENT / CHI TIỀN</b>
+                <span style="font-size:0.78em;color:#6D6870;">141 &ndash; Employee Advances<br/>338x &ndash; Employee Payables</span>
+            </div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;height:100%;">
+                <b style="display:block;color:#7A3B58;font-size:0.75em;margin-bottom:4px;">03 &middot; SETTLEMENT / QUYẾT TOÁN</b>
+                <span style="font-size:0.78em;color:#6D6870;">E-Invoices + Expenses without VAT invoices</span>
+            </div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;height:100%;">
+                <b style="display:block;color:#7A3B58;font-size:0.75em;margin-bottom:4px;">04 &middot; RECONCILIATION / CẤN TRỪ</b>
+                <span style="font-size:0.78em;color:#6D6870;">Vendor Bill &middot; Expense &middot; VAT &middot; 331 &harr; 141/338x</span>
+            </div>
+        </div>
+        <div class="col-6 col-md mb-3">
+            <div style="padding:12px 10px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;height:100%;">
+                <b style="display:block;color:#7A3B58;font-size:0.75em;margin-bottom:4px;">05 &middot; FINAL / TẤT TOÁN</b>
+                <span style="font-size:0.78em;color:#6D6870;">Excess &rarr; Repayment<br/>Shortfall &rarr; Additional payment</span>
+            </div>
+        </div>
     </div>
-    <div class="two-col" style="margin-top:18px">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <h4>1. Đề nghị & Phê duyệt</h4>
-        <p>Nhân viên tạo yêu cầu tạm ứng qua Odoo Approval, gồm người đề nghị, số tiền, mục đích, bộ phận/dự án và quy trình phê duyệt.</p>
-        <h4>2. Chi tiền & Phân luồng tài khoản</h4>
-        <p>Phân biệt <strong>TK 141 – Tạm ứng</strong> và <strong>TK 338x – Chi hộ / phải trả nhân viên</strong>; khoản chi vẫn liên kết với yêu cầu đã duyệt.</p>
-        <h4>3. Quyết toán & HĐĐT</h4>
-        <p>Hỗ trợ lấy dữ liệu hóa đơn điện tử từ nguồn tích hợp và khai báo các khoản chi ngoài hóa đơn.</p>
-        <h4>4. Tạo Vendor Bill & Cấn trừ</h4>
-        <p>Tạo Vendor Bill, ghi nhận chi phí, VAT nếu có, sinh bút toán và tự động cấn trừ theo workflow cấu hình.</p>
-        <h4>5. Hoàn ứng & Tất toán</h4>
-        <p>Tạm ứng thừa → Thu hồi. Tạm ứng thiếu → Chi bổ sung.</p>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <h4>1. Request & Approval</h4>
-        <p>Employees create advance requests through Odoo Approval with requester, amount, purpose, department/project and approval workflow.</p>
-        <h4>2. Payment & Account Routing</h4>
-        <p>Distinguish <strong>Account 141 – Employee Advances</strong> and <strong>Account 338x – Employee Payables / Payments on Behalf</strong>.</p>
-        <h4>3. Settlement & E-Invoices</h4>
-        <p>Retrieve electronic invoice data from the integrated source while supporting expenses without VAT invoices.</p>
-        <h4>4. Vendor Bills & Reconciliation</h4>
-        <p>Support Vendor Bill creation, expense/VAT recognition, related journal entries and automated reconciliation according to the configured workflow.</p>
-        <h4>5. Final Settlement</h4>
-        <p>Excess advance → Employee repayment. Additional expense → Additional payment.</p>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">1. Đề nghị &amp; Phê duyệt</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Nhân viên tạo yêu cầu tạm ứng qua Odoo Approval, gồm người đề nghị, số tiền, mục đích, bộ phận/dự án và quy trình phê duyệt.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">2. Chi tiền &amp; Phân luồng tài khoản</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Phân biệt <strong>TK 141 &ndash; Tạm ứng</strong> và <strong>TK 338x &ndash; Chi hộ / phải trả nhân viên</strong>; khoản chi vẫn liên kết với yêu cầu đã duyệt.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">3. Quyết toán &amp; HĐĐT</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Hỗ trợ lấy dữ liệu hóa đơn điện tử từ nguồn tích hợp và khai báo các khoản chi ngoài hóa đơn.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">4. Tạo Vendor Bill &amp; Cấn trừ</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Tạo Vendor Bill, ghi nhận chi phí, VAT nếu có, sinh bút toán và tự động cấn trừ theo workflow cấu hình.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">5. Hoàn ứng &amp; Tất toán</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Tạm ứng thừa &rarr; Thu hồi. Tạm ứng thiếu &rarr; Chi bổ sung.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">1. Request &amp; Approval</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Employees create advance requests through Odoo Approval with requester, amount, purpose, department/project and approval workflow.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">2. Payment &amp; Account Routing</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Distinguish <strong>Account 141 &ndash; Employee Advances</strong> and <strong>Account 338x &ndash; Employee Payables / Payments on Behalf</strong>.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">3. Settlement &amp; E-Invoices</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Retrieve electronic invoice data from the integrated source while supporting expenses without VAT invoices.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">4. Vendor Bills &amp; Reconciliation</h4>
+                <p style="font-size:0.85em;color:#6D6870;">Support Vendor Bill creation, expense/VAT recognition, related journal entries and automated reconciliation according to the configured workflow.</p>
+                <h4 style="margin:8px 0 4px;font-size:0.9em;color:#241F24;">5. Final Settlement</h4>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Excess advance &rarr; Employee repayment. Additional expense &rarr; Additional payment.</p>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/lap-de-nghi-tam-ung-hinh5.png" alt="Advance Request & Approval" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-    <div class="media-placeholder">
-      <img src="vas/quyet-toan-tam-ung-hinh6.png" alt="Settlement / Vendor Bill / Reconciliation" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/lap-de-nghi-tam-ung-hinh5.png" alt="Advance Request &amp; Approval" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+    <img src="vas/quyet-toan-tam-ung-hinh6.png" alt="Settlement / Vendor Bill / Reconciliation" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:12px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">05</div>
-      <div class="feature-title-wrap">
-        <h3>Quản lý TSCĐ & CCDC xuyên suốt vòng đời</h3>
-        <div class="feature-en">Fixed Assets & Tools Management</div>
-      </div>
+<!-- ===== FEATURE 05 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">05</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Quản lý TSCĐ &amp; CCDC xuyên suốt vòng đời</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Fixed Assets &amp; Tools Management</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Quản lý tài sản cố định và công cụ dụng cụ từ mua sắm đến đưa vào sử dụng, điều chuyển và thanh lý.</p>
-        <h4>TSCĐ</h4>
-        <ul><li>Ghi nhận tài sản</li><li>Khấu hao</li><li>Điều chuyển</li><li>Quản lý theo phòng ban / đơn vị</li><li>Thanh lý</li></ul>
-        <h4>CCDC</h4>
-        <ul><li>Số lượng</li><li>Vị trí</li><li>Cấp phát</li><li>Điều chuyển</li><li>Phân bổ chi phí nhiều kỳ</li></ul>
-        <p>Có thể liên kết tài sản và CCDC với <strong>phòng ban hoặc dự án</strong>.</p>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Manage fixed assets and tools throughout their lifecycle, from acquisition and deployment to transfer and disposal.</p>
-        <h4>Fixed Assets</h4>
-        <ul><li>Asset recognition</li><li>Depreciation</li><li>Transfers</li><li>Department / organizational assignment</li><li>Disposal</li></ul>
-        <h4>Tools & Equipment</h4>
-        <ul><li>Quantity</li><li>Location</li><li>Allocation</li><li>Transfers</li><li>Multi-period cost allocation</li></ul>
-        <p>Assets and tools can be linked to <strong>departments or projects</strong>.</p>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Quản lý tài sản cố định và công cụ dụng cụ từ mua sắm đến đưa vào sử dụng, điều chuyển và thanh lý.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">TSCĐ</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Ghi nhận tài sản</li><li>Khấu hao</li><li>Điều chuyển</li><li>Quản lý theo phòng ban / đơn vị</li><li>Thanh lý</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">CCDC</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Số lượng</li><li>Vị trí</li><li>Cấp phát</li><li>Điều chuyển</li><li>Phân bổ chi phí nhiều kỳ</li></ul>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Có thể liên kết tài sản và CCDC với <strong>phòng ban hoặc dự án</strong>.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Manage fixed assets and tools throughout their lifecycle, from acquisition and deployment to transfer and disposal.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Fixed Assets</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Asset recognition</li><li>Depreciation</li><li>Transfers</li><li>Department / organizational assignment</li><li>Disposal</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Tools &amp; Equipment</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Quantity</li><li>Location</li><li>Allocation</li><li>Transfers</li><li>Multi-period cost allocation</li></ul>
+                <p style="font-size:0.85em;color:#6D6870;margin:0;">Assets and tools can be linked to <strong>departments or projects</strong>.</p>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/hub2s-vas-phan-bo-ccdc-hinh7.png" alt="Fixed Assets & Tools Lifecycle" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/hub2s-vas-phan-bo-ccdc-hinh7.png" alt="Fixed Assets &amp; Tools Lifecycle" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">06</div>
-      <div class="feature-title-wrap">
-        <h3>Kết chuyển cuối kỳ</h3>
-        <div class="feature-en">Period-End Closing Operations</div>
-      </div>
+<!-- ===== FEATURE 06 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">06</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Kết chuyển cuối kỳ</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Period-End Closing Operations</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Tự động hóa bút toán kết chuyển cuối kỳ theo cấu hình doanh nghiệp.</p>
-        <p>Hỗ trợ kết chuyển <strong>511, 632, 641, 642</strong> và các tài khoản liên quan về <strong>TK 911 – Xác định kết quả kinh doanh</strong>.</p>
-        <ul><li>Giảm nhập bút toán thủ công.</li><li>Chuẩn hóa quy trình kết chuyển.</li><li>Rút ngắn xử lý cuối kỳ.</li><li>Dễ kiểm tra trước khi đóng kỳ.</li></ul>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Automate period-end closing entries based on the company's accounting configuration.</p>
-        <p>Support closing of <strong>511, 632, 641, 642</strong> and related accounts to <strong>Account 911 – Determination of Business Results</strong>.</p>
-        <ul><li>Reduce manual journal entries.</li><li>Standardize the closing process.</li><li>Shorten period-end processing time.</li><li>Review entries before closing.</li></ul>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Tự động hóa bút toán kết chuyển cuối kỳ theo cấu hình doanh nghiệp.</p>
+                <p style="font-size:0.85em;color:#6D6870;">Hỗ trợ kết chuyển <strong>511, 632, 641, 642</strong> và các tài khoản liên quan về <strong>TK 911 &ndash; Xác định kết quả kinh doanh</strong>.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;"><li>Giảm nhập bút toán thủ công.</li><li>Chuẩn hóa quy trình kết chuyển.</li><li>Rút ngắn xử lý cuối kỳ.</li><li>Dễ kiểm tra trước khi đóng kỳ.</li></ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Automate period-end closing entries based on the company's accounting configuration.</p>
+                <p style="font-size:0.85em;color:#6D6870;">Support closing of <strong>511, 632, 641, 642</strong> and related accounts to <strong>Account 911 &ndash; Determination of Business Results</strong>.</p>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;"><li>Reduce manual journal entries.</li><li>Standardize the closing process.</li><li>Shorten period-end processing time.</li><li>Review entries before closing.</li></ul>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/hub2s-vas-ket-chuyen-cuoi-ky-8.png" alt="Period-End Closing Rules & Entries" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
-    </div>
-  </div>
+    <img src="vas/hub2s-vas-ket-chuyen-cuoi-ky-8.png" alt="Period-End Closing Rules &amp; Entries" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
 
-  <div class="feature-card">
-    <div class="feature-header">
-      <div class="feature-num">07</div>
-      <div class="feature-title-wrap">
-        <h3>Biểu mẫu & Sổ kế toán theo TT99</h3>
-        <div class="feature-en">Vietnamese Accounting Forms & Ledgers under Circular 99</div>
-      </div>
+<!-- ===== FEATURE 07 ===== -->
+<div style="border:1px solid #E7E0E4;border-radius:16px;padding:22px;background-color:#fff;margin:20px 10px;">
+    <div class="d-flex align-items-start mb-3">
+        <div style="flex:none;width:40px;height:40px;border-radius:10px;background-color:#F6EFF3;color:#7A3B58;font-size:0.8em;font-weight:800;text-align:center;line-height:40px;margin-right:14px;">07</div>
+        <div>
+            <h3 style="margin:0;font-size:1.25em;color:#241F24;">Biểu mẫu &amp; Sổ kế toán theo TT99</h3>
+            <div style="font-size:0.85em;color:#7A3B58;font-weight:700;margin-top:2px;">Vietnamese Accounting Forms &amp; Ledgers under Circular 99</div>
+        </div>
     </div>
-    <div class="two-col">
-      <div class="copy-block">
-        <span class="lang-label">VI</span>
-        <p>Đưa các biểu mẫu và sổ kế toán trực tiếp vào Odoo, giúp hạn chế xuất dữ liệu sang Excel để xử lý thủ công.</p>
-        <h4>Phụ lục I — Chứng từ kế toán</h4>
-        <ul><li>Phiếu thu</li><li>Phiếu chi</li><li>Giấy đề nghị tạm ứng</li><li>Phiếu nhập kho</li><li>Phiếu xuất kho</li><li>Và các biểu mẫu liên quan</li></ul>
-        <h4>Phụ lục III — Sổ kế toán</h4>
-        <ul><li>Sổ Nhật ký chung</li><li>Sổ Cái</li><li>Bảng cân đối số phát sinh</li><li>Sổ quỹ</li><li>Thẻ kho</li><li>Sổ chi tiết thanh toán</li><li>Và các sổ chi tiết liên quan</li></ul>
-        <h4>Phụ lục IV — Báo cáo tài chính</h4>
-        <ul><li>Bảng Cân đối kế toán / Báo cáo tình hình tài chính</li><li>Báo cáo Kết quả hoạt động kinh doanh</li><li>Báo cáo Lưu chuyển tiền tệ theo phương pháp trực tiếp</li><li>Thuyết minh báo cáo tài chính</li></ul>
-      </div>
-      <div class="copy-block">
-        <span class="lang-label">EN</span>
-        <p>Bring Vietnamese accounting forms and ledgers directly into Odoo, reducing the need to export accounting data to Excel for manual processing.</p>
-        <h4>Appendix I — Accounting Documents</h4>
-        <ul><li>Receipt Vouchers</li><li>Payment Vouchers</li><li>Employee Advance Requests</li><li>Inventory Receipt Vouchers</li><li>Inventory Delivery Vouchers</li><li>And related accounting documents</li></ul>
-        <h4>Appendix III — Accounting Ledgers</h4>
-        <ul><li>General Journal</li><li>General Ledger</li><li>Trial Balance</li><li>Cash Book</li><li>Inventory Cards</li><li>Detailed Payables / Receivables Ledgers</li><li>And related detailed ledgers</li></ul>
-        <h4>Appendix IV — Financial Statements</h4>
-        <ul><li>Balance Sheet / Statement of Financial Position</li><li>Income Statement</li><li>Direct-method Cash Flow Statement</li><li>Notes to Financial Statements</li></ul>
-      </div>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">VI</div>
+                <p style="font-size:0.85em;color:#6D6870;">Đưa các biểu mẫu và sổ kế toán trực tiếp vào Odoo, giúp hạn chế xuất dữ liệu sang Excel để xử lý thủ công.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Phụ lục I &mdash; Chứng từ kế toán</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Phiếu thu</li><li>Phiếu chi</li><li>Giấy đề nghị tạm ứng</li><li>Phiếu nhập kho</li><li>Phiếu xuất kho</li><li>Và các biểu mẫu liên quan</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Phụ lục III &mdash; Sổ kế toán</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Sổ Nhật ký chung</li><li>Sổ Cái</li><li>Bảng cân đối số phát sinh</li><li>Sổ quỹ</li><li>Thẻ kho</li><li>Sổ chi tiết thanh toán</li><li>Và các sổ chi tiết liên quan</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Phụ lục IV &mdash; Báo cáo tài chính</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;"><li>Bảng Cân đối kế toán / Báo cáo tình hình tài chính</li><li>Báo cáo Kết quả hoạt động kinh doanh</li><li>Báo cáo Lưu chuyển tiền tệ theo phương pháp trực tiếp</li><li>Thuyết minh báo cáo tài chính</li></ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="padding:16px;border-radius:12px;background-color:#FAF9FA;border:1px solid #F0ECEE;height:100%;">
+                <div style="display:inline-block;margin:0 0 4px;font-size:0.75em;font-weight:800;letter-spacing:1px;color:#7A3B58;text-transform:uppercase;">EN</div>
+                <p style="font-size:0.85em;color:#6D6870;">Bring Vietnamese accounting forms and ledgers directly into Odoo, reducing the need to export accounting data to Excel for manual processing.</p>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Appendix I &mdash; Accounting Documents</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>Receipt Vouchers</li><li>Payment Vouchers</li><li>Employee Advance Requests</li><li>Inventory Receipt Vouchers</li><li>Inventory Delivery Vouchers</li><li>And related accounting documents</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Appendix III &mdash; Accounting Ledgers</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;"><li>General Journal</li><li>General Ledger</li><li>Trial Balance</li><li>Cash Book</li><li>Inventory Cards</li><li>Detailed Payables / Receivables Ledgers</li><li>And related detailed ledgers</li></ul>
+                <h4 style="margin:0 0 6px;font-size:0.95em;color:#241F24;">Appendix IV &mdash; Financial Statements</h4>
+                <ul style="font-size:0.85em;color:#6D6870;padding-left:20px;margin:0;"><li>Balance Sheet / Statement of Financial Position</li><li>Income Statement</li><li>Direct-method Cash Flow Statement</li><li>Notes to Financial Statements</li></ul>
+            </div>
+        </div>
     </div>
-    <div class="media-placeholder">
-      <img src="vas/bieu-mau-so-ke-toan-theo-thong-tu-99-2025-hinh9.png" alt="Circular 99 Forms, Ledgers & Financial Statements" style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12);display:block;"/>
+    <img src="vas/bieu-mau-so-ke-toan-theo-thong-tu-99-2025-hinh9.png" alt="Circular 99 Forms, Ledgers &amp; Financial Statements" style="width:100%;height:auto;border-radius:12px;display:block;margin-top:6px;"/>
+</div>
+
+<!-- ===== FLOW ===== -->
+<div style="padding:20px 10px;">
+    <h2 style="font-size:1.5em;font-weight:800;color:#171519;margin:0 0 4px;">Quy trình kế toán Việt Nam trên một nền tảng</h2>
+    <div style="font-size:1.05em;font-weight:700;color:#7A3B58;margin:0 0 14px;">One Integrated Vietnamese Accounting Workflow</div>
+    <div class="row">
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">01 &mdash; CAPTURE</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Đưa dữ liệu vào hệ thống</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Tax ID &rarr; Customer/Vendor &rarr; E-Invoice &rarr; Purchase/Sales</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">02 &mdash; VALIDATE</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Kiểm soát dữ liệu</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Duplicate Tax ID &rarr; Invoice Status &rarr; PO &rarr; Receipt &rarr; Bill &rarr; 3-Way Matching</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">03 &mdash; ACCOUNT</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Hạch toán</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Accounting Rules &rarr; Counterpart Account &rarr; Journal Entry &rarr; Accounting Voucher</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">04 &mdash; ADVANCE &amp; SETTLE</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Tạm ứng &amp; Chi hộ</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Request &rarr; Approval &rarr; Payment &rarr; E-Invoice &rarr; Settlement &rarr; Vendor Bill &rarr; Reconciliation</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">05 &mdash; CLOSE</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Đóng kỳ</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Depreciation &rarr; Allocation &rarr; Reconciliation &rarr; Closing Entries &rarr; Account 911</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <div style="border:1px solid #E7E0E4;border-radius:12px;padding:14px 12px;background-color:#fff;height:100%;">
+                <b style="display:block;font-size:0.78em;color:#7A3B58;margin-bottom:4px;">06 &mdash; REPORT</b>
+                <strong style="display:block;font-size:0.85em;margin-bottom:4px;color:#241F24;">Báo cáo</strong>
+                <span style="font-size:0.75em;color:#6D6870;">Accounting Documents &rarr; Ledgers &rarr; Financial Statements &rarr; TT99 Reports</span>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
-</section>
-
-<section class="vas-section">
-  <div class="section-head">
-    <h2 class="vas-section-title">Quy trình kế toán Việt Nam trên một nền tảng</h2>
-    <div class="vas-section-subtitle">One Integrated Vietnamese Accounting Workflow</div>
-  </div>
-  <div class="flow-wrap">
-    <div class="flow">
-      <div class="flow-step"><b>01 — CAPTURE</b><strong>Đưa dữ liệu vào hệ thống</strong><span>Tax ID → Customer/Vendor → E-Invoice → Purchase/Sales</span></div>
-      <div class="flow-step"><b>02 — VALIDATE</b><strong>Kiểm soát dữ liệu</strong><span>Duplicate Tax ID → Invoice Status → PO → Receipt → Bill → 3-Way Matching</span></div>
-      <div class="flow-step"><b>03 — ACCOUNT</b><strong>Hạch toán</strong><span>Accounting Rules → Counterpart Account → Journal Entry → Accounting Voucher</span></div>
-      <div class="flow-step"><b>04 — ADVANCE & SETTLE</b><strong>Tạm ứng & Chi hộ</strong><span>Request → Approval → Payment → E-Invoice → Settlement → Vendor Bill → Reconciliation</span></div>
-      <div class="flow-step"><b>05 — CLOSE</b><strong>Đóng kỳ</strong><span>Depreciation → Allocation → Reconciliation → Closing Entries → Account 911</span></div>
-      <div class="flow-step"><b>06 — REPORT</b><strong>Báo cáo</strong><span>Accounting Documents → Ledgers → Financial Statements → TT99 Reports</span></div>
+<!-- ===== AUDIENCE ===== -->
+<div style="padding:20px 10px;">
+    <h2 style="font-size:1.5em;font-weight:800;color:#171519;margin:0 0 4px;">Hub2S VAS dành cho ai?</h2>
+    <div style="font-size:1.05em;font-weight:700;color:#7A3B58;margin:0 0 14px;">Who is Hub2S VAS for?</div>
+    <p style="font-size:0.9em;color:#4B464D;"><strong>VI —</strong> Hub2S VAS được thiết kế cho doanh nghiệp tại Việt Nam đang sử dụng hoặc triển khai Odoo và cần bổ sung các nghiệp vụ kế toán, biểu mẫu, sổ sách và quy trình phù hợp với thực tế Việt Nam.</p>
+    <p style="font-size:0.9em;color:#4B464D;"><strong>EN —</strong> Hub2S VAS is designed for businesses in Vietnam that are using or implementing Odoo and need Vietnamese-specific accounting workflows, forms, ledgers, and reporting capabilities.</p>
+    <div class="row">
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Doanh nghiệp thương mại<br/><strong>Trading businesses</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Doanh nghiệp dịch vụ<br/><strong>Service companies</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Doanh nghiệp sản xuất<br/><strong>Manufacturing businesses</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Thường xuyên phát sinh tạm ứng / chi hộ<br/><strong>Frequent employee advances / payments on behalf</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Quản lý TSCĐ &amp; CCDC<br/><strong>Fixed assets and tools management</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Mua hàng &amp; đối soát hóa đơn<br/><strong>Purchasing and invoice reconciliation</strong></div></div>
+        <div class="col-12 col-md-4 mb-3"><div style="padding:16px;border:1px solid #E7E0E4;border-radius:12px;background-color:#FBFAFB;font-size:0.85em;color:#5F5961;height:100%;">Quản lý kế toán Việt Nam trực tiếp trên Odoo<br/><strong>Vietnamese accounting directly within Odoo</strong></div></div>
     </div>
-  </div>
-</section>
+</div>
 
-<section class="vas-section">
-  <div class="section-head">
-    <h2 class="vas-section-title">Hub2S VAS dành cho ai?</h2>
-    <div class="vas-section-subtitle">Who is Hub2S VAS for?</div>
-  </div>
-  <p><strong>VI —</strong> Hub2S VAS được thiết kế cho doanh nghiệp tại Việt Nam đang sử dụng hoặc triển khai Odoo và cần bổ sung các nghiệp vụ kế toán, biểu mẫu, sổ sách và quy trình phù hợp với thực tế Việt Nam.</p>
-  <p><strong>EN —</strong> Hub2S VAS is designed for businesses in Vietnam that are using or implementing Odoo and need Vietnamese-specific accounting workflows, forms, ledgers, and reporting capabilities.</p>
-  <div class="audience-grid">
-    <div class="audience-item">Doanh nghiệp thương mại<br><strong>Trading businesses</strong></div>
-    <div class="audience-item">Doanh nghiệp dịch vụ<br><strong>Service companies</strong></div>
-    <div class="audience-item">Doanh nghiệp sản xuất<br><strong>Manufacturing businesses</strong></div>
-    <div class="audience-item">Thường xuyên phát sinh tạm ứng / chi hộ<br><strong>Frequent employee advances / payments on behalf</strong></div>
-    <div class="audience-item">Quản lý TSCĐ & CCDC<br><strong>Fixed assets and tools management</strong></div>
-    <div class="audience-item">Mua hàng & đối soát hóa đơn<br><strong>Purchasing and invoice reconciliation</strong></div>
-    <div class="audience-item">Quản lý kế toán Việt Nam trực tiếp trên Odoo<br><strong>Vietnamese accounting directly within Odoo</strong></div>
-  </div>
-</section>
+<!-- ===== SUPPORT ===== -->
+<div style="padding:24px;border:1px solid #DDCBD4;border-radius:16px;background-color:#F6EFF3;margin:20px 10px;">
+    <h3 style="font-size:1.2em;margin:0 0 4px;color:#241F24;">Được phát triển bởi Hub2S</h3>
+    <div style="font-size:0.9em;color:#7A3B58;font-weight:700;margin-bottom:12px;">Developed by Hub2S</div>
+    <p style="font-size:0.88em;color:#4A5568;"><strong>VI —</strong> Hub2S Vietnam phát triển các giải pháp ERP và AI dành cho doanh nghiệp, tập trung vào việc kết nối nền tảng Odoo với các yêu cầu vận hành thực tế tại Việt Nam.</p>
+    <p style="font-size:0.88em;color:#4A5568;"><strong>EN —</strong> Hub2S Vietnam develops ERP and AI solutions for businesses, with a focus on connecting Odoo with the practical operational requirements of Vietnamese companies.</p>
+    <p style="font-size:0.88em;color:#4A5568;"><strong>Zalo:</strong> (+84) 902 611 333<br/><strong>Email:</strong> sales@hub2s.com</p>
+    <p style="font-size:0.88em;color:#4A5568;"><strong>VI —</strong> Để được hỗ trợ cài đặt, triển khai hoặc tùy chỉnh Hub2S VAS theo yêu cầu doanh nghiệp, vui lòng liên hệ Hub2S Vietnam.</p>
+    <p style="font-size:0.88em;color:#4A5568;margin:0;"><strong>EN —</strong> For installation, implementation, or enterprise-specific customization support, please contact Hub2S Vietnam.</p>
+</div>
 
-<section class="vas-section">
-  <div class="support-box">
-    <h3>Được phát triển bởi Hub2S</h3>
-    <div class="en">Developed by Hub2S</div>
-    <p><strong>VI —</strong> Hub2S Vietnam phát triển các giải pháp ERP và AI dành cho doanh nghiệp, tập trung vào việc kết nối nền tảng Odoo với các yêu cầu vận hành thực tế tại Việt Nam.</p>
-    <p><strong>EN —</strong> Hub2S Vietnam develops ERP and AI solutions for businesses, with a focus on connecting Odoo with the practical operational requirements of Vietnamese companies.</p>
-    <p><strong>Zalo:</strong> (+84) 902 611 333<br><strong>Email:</strong> sales@hub2s.com</p>
-    <p><strong>VI —</strong> Để được hỗ trợ cài đặt, triển khai hoặc tùy chỉnh Hub2S VAS theo yêu cầu doanh nghiệp, vui lòng liên hệ Hub2S Vietnam.</p>
-    <p><strong>EN —</strong> For installation, implementation, or enterprise-specific customization support, please contact Hub2S Vietnam.</p>
-  </div>
-</section>
-
-<footer class="footer">
-  <strong>Hub2S VAS</strong>
-  <p>Vietnam Accounting Localization for Odoo</p>
-  <p><b>Standardize. Automate. Control.</b></p>
-  <p>Chuẩn hóa nghiệp vụ kế toán Việt Nam trên nền tảng Odoo.</p>
-</footer>
+<!-- ===== FOOTER ===== -->
+<div class="text-center" style="padding:20px 10px 0;border-top:1px solid #E7E0E4;">
+    <div style="font-size:1.3em;font-weight:800;color:#7A3B58;">Hub2S VAS</div>
+    <p style="color:#6D6870;font-size:0.85em;margin:6px 0;">Vietnam Accounting Localization for Odoo</p>
+    <p style="margin:6px 0;"><b>Standardize. Automate. Control.</b></p>
+    <p style="color:#6D6870;font-size:0.85em;margin:6px 0;">Chuẩn hóa nghiệp vụ kế toán Việt Nam trên nền tảng Odoo.</p>
+</div>
 
 </div>
 </body>
